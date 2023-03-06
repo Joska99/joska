@@ -26,7 +26,7 @@ resource "azurerm_resource_group" "rg" {
 resource "azurerm_network_security_group" "nsg" {
   count               = length(var.names-sub)
   name                = "nsg-${var.names-sub[count.index]}-subnet"
-  location            = var.location
+  location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
 }
 
@@ -44,7 +44,7 @@ resource "azurerm_subnet_network_security_group_association" "nsg-ass" {
 ##############
 resource "azurerm_network_security_rule" "rule1" {
   name                        = "SSH"
-  priority                    = 1001
+  priority                    = 1010
   direction                   = "Inbound"
   access                      = "Allow"
   protocol                    = "Tcp"
@@ -55,45 +55,58 @@ resource "azurerm_network_security_rule" "rule1" {
   resource_group_name         = azurerm_resource_group.rg.name
   network_security_group_name = azurerm_network_security_group.nsg[0].name
 }
-#resource "azurerm_network_security_rule" "rule2" {
-#  name                        = "HTTP-TO-LB"
-#  priority                    = 1002
-#  direction                   = "Inbound"
-#  access                      = "Allow"
-#  protocol                    = "Tcp"
-#  source_port_range           = "*"
-#  destination_port_range      = "80"
-#  source_address_prefix       = "*"
-#  destination_address_prefix  = "*"
-#  resource_group_name         = azurerm_resource_group.rg.name
-#  network_security_group_name = azurerm_network_security_group.nsg[0].name
-#}
-#resource "azurerm_network_security_rule" "rule3" {
-#  name                        = "ICMP"
-#  priority                    = 1003
-#  direction                   = "Inbound"
-#  access                      = "Allow"
-#  protocol                    = "Icmp"
-#  source_port_range           = "*"
-#  destination_port_range      = "*"
-#  source_address_prefix       = "10.1.0.0/16"
-#  destination_address_prefix  = "*"
-#  resource_group_name         = azurerm_resource_group.rg.name
-#  network_security_group_name = azurerm_network_security_group.nsg[0].name
-#}
-#resource "azurerm_network_security_rule" "rule4" {
-#  name                        = "POSTGRES"
-#  priority                    = 1004
-#  direction                   = "Outbound"
-#  access                      = "Allow"
-#  protocol                    = "Tcp"
-#  source_port_range           = "*"
-#  destination_port_range      = "5432"
-#  source_address_prefix       = "10.0.1.0/24"
-#  destination_address_prefix  = "*"
-#  resource_group_name         = azurerm_resource_group.rg.name
-#  network_security_group_name = azurerm_network_security_group.nsg[0].name
-#}
+resource "azurerm_network_security_rule" "rule2" {
+  name                        = "HTTP-TO-LB"
+  priority                    = 1002
+  direction                   = "Inbound"
+  access                      = "Allow"
+  protocol                    = "Tcp"
+  source_port_range           = "*"
+  destination_port_range      = "80"
+  source_address_prefix       = "*"
+  destination_address_prefix  = "*"
+  resource_group_name         = azurerm_resource_group.rg.name
+  network_security_group_name = azurerm_network_security_group.nsg[0].name
+}
+resource "azurerm_network_security_rule" "rule3" {
+  name                        = "ICMP"
+  priority                    = 1003
+  direction                   = "Inbound"
+  access                      = "Allow"
+  protocol                    = "Icmp"
+  source_port_range           = "*"
+  destination_port_range      = "*"
+  source_address_prefix       = "10.1.0.0/16"
+  destination_address_prefix  = "*"
+  resource_group_name         = azurerm_resource_group.rg.name
+  network_security_group_name = azurerm_network_security_group.nsg[0].name
+}
+resource "azurerm_network_security_rule" "rule4" {
+  name                        = "POSTGRES"
+  priority                    = 1004
+  direction                   = "Outbound"
+  access                      = "Allow"
+  protocol                    = "Tcp"
+  source_port_range           = "*"
+  destination_port_range      = "5432"
+  source_address_prefix       = "10.0.1.0/24"
+  destination_address_prefix  = "*"
+  resource_group_name         = azurerm_resource_group.rg.name
+  network_security_group_name = azurerm_network_security_group.nsg[0].name
+}
+resource "azurerm_network_security_rule" "rule5" {
+  name                        = "POSTGRES"
+  priority                    = 1004
+  direction                   = "Inbound"
+  access                      = "Allow"
+  protocol                    = "*"
+  source_port_range           = "*"
+  destination_port_range      = "5432"
+  source_address_prefix       = "10.0.1.0/24"
+  destination_address_prefix  = "10.0.2.0/24"
+  resource_group_name         = azurerm_resource_group.rg.name
+  network_security_group_name = azurerm_network_security_group.nsg[1].name
+}
 
 
 #############################################################################################################################################################################################################
@@ -122,7 +135,6 @@ resource "azurerm_virtual_network_peering" "vnet2_to_vnet1" {
   virtual_network_name      = azurerm_virtual_network.vnet[1].name
   remote_virtual_network_id = azurerm_virtual_network.vnet[0].id
 }
-
 
 ############
 ### SUBNETS
@@ -232,7 +244,7 @@ resource "azurerm_network_interface" "nic-vm" {
 ########################################
 resource "azurerm_availability_set" "a-set" {
   name                = "azurerm_availability_set"
-  location            = var.location
+  location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
 }
 
@@ -331,6 +343,36 @@ resource "azurerm_virtual_machine" "vm-another-sub" {
   }
 }
 
+#############################################################################################################################################
+### POSGRESQL
+#################################################################################################################################################################
+##########
+### SRVER
+##########
+resource "azurerm_postgresql_server" "serv" {
+  name                = "postgresql-server-1-2228420-joska"
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+
+  sku_name = "B_Gen5_2"
+  storage_mb                   = 5120
+  backup_retention_days        = 7
 
 
+  administrator_login          = var.login-passwd-for-vm[0]
+  administrator_login_password = var.login-passwd-for-vm[1]
+  version                      = "9.5"
+  ssl_enforcement_enabled      = true
+}
+
+#############
+### DATABASE
+#############
+resource "azurerm_postgresql_database" "db" {
+  name                = "db-228420-joska"
+  resource_group_name = azurerm_resource_group.rg.name
+  server_name         = azurerm_postgresql_server.serv.name
+  charset             = "UTF8"
+  collation           = "English_United States.1252"
+}
 
