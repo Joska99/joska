@@ -1,5 +1,5 @@
-tf-ex1/.terraform/providers/registry.terraform.io/hashicorp/azurerm/3.45.0/linux_amd64/terraform-provider-azurerm_v3.45.0_x5
-tf-ex1/.terraform.lock.hcl
-tf-ex1/ex.tfplan
-tf-ex1/terraform.tfstate.backup
-tf-ex1/terraform.tfstate
+terraform/tf-ex1/.terraform/providers/registry.terraform.io/hashicorp/azurerm/3.45.0/linux_amd64/terraform-provider-azurerm_v3.45.0_x5
+terraform/tf-ex1/.terraform.lock.hcl
+terraform/tf-ex1/ex.tfplan
+terraform/tf-ex1/terraform.tfstate.backup
+terraform/tf-ex1/terraform.tfstate

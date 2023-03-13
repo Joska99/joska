@@ -32,21 +32,32 @@ variable "login-passwd-for-vm" {
 ###########
 ### NETWORK
 ###########
+variable "rg-name" {
+  default = "joska-2"
+  type = string
+  description = "name to rg"
+}
+
+
+
 variable "ip-ranges-vnet" {
   default     = ["10.0.0.0/16", "10.1.0.0/16"]
   type        = list(string)
   description = "ip ranges for nets"
 }
+
 variable "names-vnet" {
   default     = ["vnet-1", "vnet-2"]
   type        = list(string)
   description = "names for vnets, names-vnets = ip-ranges-vnets"
-}
+} 
+
 variable "ip-ranges-sub" {
   default     = ["10.0.1.0/24", "10.0.2.0/24", "10.1.0.0/24"]
   type        = list(string)
   description = "ip ranges for subnets, ip-ranges-sub = names-sub, need acepteble cider block to ip-ranges-vnet"
 }
+
 variable "names-sub" {
   default     = ["public", "private", "another-sub"]
   type        = list(string)
