@@ -10,8 +10,17 @@ class LinkedList:
 
         self.ll = make_ll(iter(xs))
 
-    def __iter__(self):  #! iterrator
-        return self
+    def __str__(self):
+        return '<' + '-->'.join([str(x) for x in self]) + '>'
+
+    def __iter__(self):
+        return LLIterator(self.ll)
+
+
+class LLIterator:
+
+    def __init__(self, xs):
+        self.ll = xs
 
     def __next__(self):
         if len(self.ll) != 0:
@@ -23,6 +32,7 @@ class LinkedList:
 
 #TODO: xs = (1, (2, (3, (4, (5, ())))))
 xs = LinkedList(1, 2, 3, 4, 5)
-xxs = [x * x for x in xs]
 print(xs)
+xxs = [x * x for x in xs]
 print(xxs)
+print(xs)
