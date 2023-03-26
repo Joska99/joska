@@ -1,0 +1,16 @@
+##########
+From AZURE
+##########
+az aks get-credentials --resource-group <resource-group-name> --name <aks-cluster-name>
+
+#######
+VSCode
+######
+az login
+az account set --subscription <subscription-name-or-id>
+az aks get-credentials --resource-group <resource-group-name> --name <aks-cluster-name>
+
+########
+From GCP
+########
+gcloud container cluster get-credentials [CLUSTER NAME] --zone [ZONE NAME]
