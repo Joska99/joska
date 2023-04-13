@@ -1,12 +1,12 @@
-docker pull - to copy a image from hub
-docker build path - to build image
-docker run [args] image - to run image
+docker pull -> to copy a image from hub
+docker build {path} -> to build image
+docker run [args] image -> to run image
 -d
--t - tag, tag:version
+-t -> tag, tag:version
 --name
--it - use terminal
+-it -> use terminal
 -p - open ports 80:80
 
-docker ps - to see running containers
-docker exec [args] name shell -  to add executable comand to conteiner
--it - use terminal
+docker ps -> to see running containers
+docker exec [args] name shell ->  to add executable comand to conteiner
+-it -> use terminal

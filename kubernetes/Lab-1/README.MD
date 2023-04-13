@@ -1,1 +1,3 @@
-![Alt Text](https://raw.githubusercontent.com/Joska99/joska/main/kubernetes/Lab-1/diagram.drawio.svg?token=GHSAT0AAAAAACBFVASJH4FL5WLPB3Z66ZBQZBXYDVQ)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Joska99/joska/main/kubernetes/Lab-1/diagram.drawio.svg">
+</p>
