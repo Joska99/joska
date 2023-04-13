@@ -1,6 +1,6 @@
 import random
 from datetime import datetime
-from Advanced.Decorators.monitoredD import monitored
+from monitoredD import monitored
 
 
 def loged(func):

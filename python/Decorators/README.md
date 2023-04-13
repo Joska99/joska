@@ -1,0 +1,1 @@
+logedD.py creates file log.txt and write there func and time log, and total use of functions

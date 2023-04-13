@@ -20,3 +20,5 @@ if __name__ == '__main__':
 
     for p in takewhile(lambda q: q < n, primes()):
         print(p)
+
+##! run from console "python3 generator.py (any number) "
