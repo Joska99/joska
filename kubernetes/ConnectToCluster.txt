@@ -7,7 +7,7 @@ az aks get-credentials --resource-group <resource-group-name> --name <aks-cluste
 VSCode
 ######
 az login
-az account set --subscription <subscription-name-or-id>
+az account set --subscription  <subscription-name-or-id>
 az aks get-credentials --resource-group <resource-group-name> --name <aks-cluster-name>
 
 ########
