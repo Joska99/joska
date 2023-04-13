@@ -1,0 +1,1 @@
+![Alt Text](https://raw.githubusercontent.com/Joska99/joska/main/kubernetes/Lab-1/diagram.drawio.svg?token=GHSAT0AAAAAACBFVASIGT6HY3Q4WNKIU6TYZBXXYUA)
