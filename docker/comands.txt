@@ -1,12 +1,13 @@
+sudo service docker start -> to start docker service
 docker pull -> to copy a image from hub
-docker build {path} -> to build image
+docker build [args] {path} -> to build image
+  -t -> name:tag/version
 docker run [args] image -> to run image
--d
--t -> tag, tag:version
---name
--it -> use terminal
--p - open ports 80:80
-
+  -d
+  -t -> tag, tag:version
+  --name -> name of the container
+  -it -> use terminal
+  -p - open ports 80:80
 docker ps -> to see running containers
 docker exec [args] name shell ->  to add executable comand to conteiner
--it -> use terminal
+  -it 
