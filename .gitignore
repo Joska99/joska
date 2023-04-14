@@ -3,9 +3,10 @@ terraform/tf-ex1/.terraform.lock.hcl
 terraform/tf-ex1/ex.tfplan
 terraform/tf-ex1/terraform.tfstate.backup
 terraform/tf-ex1/terraform.tfstate
+terraform/tf-ex1/ex1.tfplan
+.vscode
 python/Decorators/__pycache__/monitoredD.cpython-39.pyc
 python/OS/__pycache__/OS1.cpython-39.pyc
-terraform/tf-ex1/ex1.tfplan
 python/Decorators/__pycache__/monitoredD.cpython-39.pyc
 kubernetes/ConnectToCluster.txt
 kubernetes/ConnectToCluster.txt
