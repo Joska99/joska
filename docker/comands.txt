@@ -11,3 +11,4 @@ docker run [args] image -> to run image
 docker ps -> to see running containers
 docker exec [args] name shell ->  to add executable comand to conteiner
   -it 
+  
