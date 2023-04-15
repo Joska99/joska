@@ -5,4 +5,4 @@
 steps:<br />
 1. connect to your Kubernetes cluster<br />
 2. kubectl ...
-3. open browser and check https://<ingress-external-ip>/bird, https://<ingress-external-ip>/cats and https://<ingress-external-ip>/dogs
+3. open browser and check https://"ingress-external-ip"/bird, https://"ingress-external-ip"/cats and https://"ingress-external-ip"/dogs
