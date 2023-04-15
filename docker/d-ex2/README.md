@@ -2,6 +2,7 @@
   <img src="https://github.com/Joska99/joska/blob/main/docker/d-ex2/diagram.drawio.svg">
 </p>
 steps:<br />
+"navigate to d-ex2 folder"<br />
 sudo service docker start<br />
 docker build -t my-nx:1 .<br />
 docker run -p 8000:80 -d -t my-nx:4<br />
