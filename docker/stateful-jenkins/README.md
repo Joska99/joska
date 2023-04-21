@@ -4,6 +4,8 @@
 <img src="https://github.com/Joska99/joska/blob/main/docker/stateful-jenkins/diagram.drawio.svg">
 </p>
 
+<h1>Steps:</h1>
+
 1. Run those comands:
 ```bash
 mkdir jenkins_home
