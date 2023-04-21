@@ -1,5 +1,7 @@
+
 <p align="center">
   <h1>Stateful Jenkins Container with plugins</h1>
+<img src="https://github.com/Joska99/joska/blob/main/docker/stateful-jenkins/diagram.drawio.svg">
 </p>
 
 ```bash

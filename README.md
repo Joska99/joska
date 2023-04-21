@@ -16,7 +16,7 @@
     <h1>Docker labs</h1>
 
 1. Jenkins Container with plugins - https://github.com/Joska99/joska/blob/main/docker/stateful-jenkins
-<img src="https://github.com/Joska99/joska/blob/main/docker/d-ex2/diagram.drawio.svg">
+<img src="https://github.com/Joska99/joska/blob/main/docker/stateful-jenkins/diagram.drawio.svg">
 
 2. Nginx Container with multiple HTML pages - https://github.com/Joska99/joska/blob/main/docker/d-ex2
   <img src="https://github.com/Joska99/joska/blob/main/docker/d-ex2/diagram.drawio.svg">
