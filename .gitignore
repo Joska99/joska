@@ -4,12 +4,11 @@ terraform/tf-ex1/ex.tfplan
 terraform/tf-ex1/terraform.tfstate.backup
 terraform/tf-ex1/terraform.tfstate
 terraform/tf-ex1/ex1.tfplan
-.vscode
+~/joska/.vscode/
 python/Decorators/__pycache__/monitoredD.cpython-39.pyc
 python/OS/__pycache__/OS1.cpython-39.pyc
 python/Decorators/__pycache__/monitoredD.cpython-39.pyc
 kubernetes/ConnectToCluster.txt
-kubernetes/ConnectToCluster.txt
 docker/comands.txt
-.vscode/settings.json
-.vscode/launch.json
+.vscode/
+/docker/stateful-jenkins/jenkins_home/
