@@ -21,7 +21,7 @@
 
 <h1>Docker labs</h1>
 
-1. [Jenkins Container with plugins](https://github.com/Joska99/joska/blob/main/docker/stateful-jenkins)
+1. [Stateful Jenkins Container with plugins](https://github.com/Joska99/joska/blob/main/docker/stateful-jenkins)
 <img src="https://github.com/Joska99/joska/blob/main/docker/stateful-jenkins/diagram.drawio.svg">
 
 2. [Prometheus Container with config file](https://github.com/Joska99/joska/tree/main/docker/prometheus)
