@@ -24,6 +24,9 @@
 1. [Jenkins Container with plugins](https://github.com/Joska99/joska/blob/main/docker/stateful-jenkins)
 <img src="https://github.com/Joska99/joska/blob/main/docker/stateful-jenkins/diagram.drawio.svg">
 
-2. [Nginx Container with multiple HTML pages](https://github.com/Joska99/joska/blob/main/docker/html)
+2. [Prometheus Container with config file](https://github.com/Joska99/joska/tree/main/docker/prometheus)
+<img src="https://github.com/Joska99/joska/blob/main/docker/prometheus/diagram.drawio.svg">
+
+3. [Nginx Container with multiple HTML pages](https://github.com/Joska99/joska/blob/main/docker/html)
 <img src="https://github.com/Joska99/joska/blob/main/docker/html/diagram.drawio.svg">
 </p>

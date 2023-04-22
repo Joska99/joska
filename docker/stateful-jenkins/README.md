@@ -1,6 +1,6 @@
 
 <p align="center">
-<h1>Stateful Jenkins Container with plugins</h1>
+<h1>Stateful Jenkins Container with AZ, Dcoker, Kubectl</h1>
 <img src="https://github.com/Joska99/joska/blob/main/docker/stateful-jenkins/diagram.drawio.svg">
 </p>
 
@@ -28,11 +28,7 @@ cat /var/jenkins_home/secrets/initialAdminPassword
 
 <h2>Befor delete do this:</h2>
 
-1. Coppy id of jenkins container
+1. Run to copy data to your localc dir
 ```bash
-docker ps
-```
-2. Run to copy data to your localc dir
-```bash
-docker cp <"ID">:/var/jenkins_home .
+docker cp stf-jenkins:/var/jenkins_home .
 ```

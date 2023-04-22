@@ -1,6 +1,6 @@
 
 <p align="center">
-<h1>Prometheus Container with cocnfig file</h1>
+<h1>Prometheus Container with config file</h1>
 <img src="https://github.com/Joska99/joska/blob/main/docker/prometheus/diagram.drawio.svg">
 </p>
 
