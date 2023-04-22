@@ -8,8 +8,9 @@
 
 1. Run those comands:
 ```bash
+sudo service docker start 
 mkdir jenkins_home
-docker build -t stateful-jenkins .
+docker build -t stateful-jenkins --no-cache .
 docker run -p 8000:8080 -p 50000:50000  -v /var/run/docker.sock:/var/run/docker.sock -d --name stf-jenkins --restart=on-failure -t stateful-jenkins
 ```
 2. Connect to localhost:8000 
@@ -19,8 +20,8 @@ docker run -p 8000:8080 -p 50000:50000  -v /var/run/docker.sock:/var/run/docker.
 <h2>if it firs time:</h2>
 
 ```bash
-docker exec -it --user root <"container id"> bash
-cat /ver/jenkins_home/secrets/initialAdminPasswordls
+docker exec -it --user root stf-jenkins bash
+cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 1. Enter admin password
 2. Create yout username and password, next time you connect to the container by this
