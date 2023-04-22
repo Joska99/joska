@@ -14,3 +14,5 @@ docker/comands.txt
 /.vscode/settings.json
 /docker/stateful-jenkins/jenkins_home/
 /docker/grafana/grafana-data/
+docker/grafana/grafana.ini
+docker/grafana/grafana.ini

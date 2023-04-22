@@ -14,11 +14,6 @@
 1. [Ingres with multiple services](https://github.com/Joska99/joska/blob/main/kubernetes/Lab-1)
 <img src="https://github.com/Joska99/joska/blob/main/kubernetes/Lab-1/diagram.drawio.svg">
 
-<h1>Terraform labs</h1>
-
-1. [TF](https://github.com/Joska99/joska/blob/main/terraform/tf-ex1)
-<img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex1/diagram.drawio.svg">
-
 <h1>Docker labs</h1>
 
 1. [Stateful Jenkins Container with plugins](https://github.com/Joska99/joska/blob/main/docker/stateful-jenkins)
@@ -27,6 +22,15 @@
 2. [Prometheus Container with config file](https://github.com/Joska99/joska/tree/main/docker/prometheus)
 <img src="https://github.com/Joska99/joska/blob/main/docker/prometheus/diagram.drawio.svg">
 
-3. [Nginx Container with multiple HTML pages](https://github.com/Joska99/joska/blob/main/docker/html)
+3. [Grafana Container with, with Data](https://github.com/Joska99/joska/tree/main/docker/grafana)
+<img src="https://github.com/Joska99/joska/blob/main/docker/grafana/diagram.drawio.svg">
+
+4. [Nginx Container with multiple HTML pages](https://github.com/Joska99/joska/blob/main/docker/html)
 <img src="https://github.com/Joska99/joska/blob/main/docker/html/diagram.drawio.svg">
 </p>
+
+<h1>Terraform labs</h1>
+
+1. [TF](https://github.com/Joska99/joska/blob/main/terraform/tf-ex1)
+<img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex1/diagram.drawio.svg">
+

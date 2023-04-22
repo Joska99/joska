@@ -14,12 +14,17 @@ docker run -p 3000:3000 -v grafana-data:/var/lib/grafana -d --name my-graf --res
 ```
 2. Connect to localhost:3000
 3. login: pswd: or Skip
-4. Run those to save sestings and plugins:
+
+<h2>Befor delete do this:</h2>
+
+1.  Run to copy data to your localc dir:
 ```bash
 docker cp my-graf:/var/lib/grafana grafana-data
 docker  cp my-graf:/etc/grafana/grafana.ini .
 ``` 
-3. To delete:
+
+<h2>To delete:</h2>
+
 ```Bash
 docker kill my-graf
 docker rm my-graf
