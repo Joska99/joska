@@ -18,3 +18,10 @@ git clone https://github.com/Joska99/joska/tree/main/kubernetes/Lab-1
 kubectl aplly -f ./manifest
 ```
 5. open browser and check https://"ingress-external-ip"/bird, https://"ingress-external-ip"/cats and https://"ingress-external-ip"/dogs
+
+
+<h2>To delete:</h2>
+
+```Bash
+kubectl delete all --all
+```

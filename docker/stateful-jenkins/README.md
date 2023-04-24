@@ -50,3 +50,10 @@ cat /var/jenkins_home/secrets/initialAdminPassword
 ```bash
 docker cp stf-jenkins:/var/jenkins_home .
 ```
+
+<h2>To delete:</h2>
+
+```Bash
+docker kill stf-jenkins
+docker rm stf-jenkins
+```
