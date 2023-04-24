@@ -10,22 +10,24 @@
 ```bash
 mkdir jenkins_home
 ```
-2. Build Socker image:
+2. Build Docker image:
 ```Bash
 docker build -t stateful-jenkins --no-cache .
 ```
 3. Run docker container:
--p - runn on port
--v - mount docker.socket
--d - detach mode
---name - chose container name
---restart=on-failure - automaticly restart container
--t - image tag to run
+
+-p - run on port<br />
+-v - mount docker.socket to container<br />
+-d - detach mode<br />
+--name - chose container name<br />
+--restart=on-failure - automaticly restart container<br />
+-t - image tag to run<br />
+
 ```Bash
 docker run -p 8000:8080 -p 50000:50000  -v /var/run/docker.sock:/var/run/docker.sock -d --name stf-jenkins --restart=on-failure -t stateful-jenkins
 ```
-2. Connect to localhost:8000 
-3. Enter ur login and password
+4. Connect to localhost:8000 
+5. Enter ur login and password
 
 
 <h2>First time Jenkins log-in:</h2>
@@ -39,12 +41,12 @@ docker exec -it --user root stf-jenkins bash
 cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 3. Enter the output as a password
-5. Create your credentials, next time you connect to the container by them
-3. Install all required plugins
+4. Create your credentials, next time you connect to the container by them
+5. Install all required plugins
 
 <h2>Save all data to Next time:</h2>
 
-1. Run to copy data to your local machine
+1. Run to copy data to your local machine 
 ```bash
 docker cp stf-jenkins:/var/jenkins_home .
 ```

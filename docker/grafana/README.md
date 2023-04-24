@@ -8,22 +8,35 @@
 1. Run those comands:
 ```bash
 mkdir grafana-data
-sudo service docker start 
+```
+2. Build Docker image:
+```bash
 docker build -t grafana-container .
+```
+3. 3. Run docker container:
+
+-p - run on port<br />
+-v - mount grafana-data to container<br />
+-d - detach mode<br />
+--name - chose container name<br />
+--restart=on-failure - automaticly restart container<br />
+-t - image tag to run<br />
+
+```bash
 docker run -p 3000:3000 -v grafana-data:/var/lib/grafana -d --name my-graf --restart=on-failure -t grafana-container
 ```
-2. Connect to localhost:3000
-3. login: pswd: or Skip
+4. Connect to localhost:3000
+5. login: pswd: or Skip
 
 <h2>Befor delete do this:</h2>
 
-1.  Run to copy data to your localc dir:
+1.  Run to copy data to your localc machine:
 ```bash
 docker cp my-graf:/var/lib/grafana grafana-data
 docker  cp my-graf:/etc/grafana/grafana.ini .
 ``` 
 
-<h2>To delete:</h2>
+<h2>To delete container:</h2>
 
 ```Bash
 docker kill my-graf
