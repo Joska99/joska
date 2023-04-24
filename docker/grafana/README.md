@@ -5,7 +5,7 @@
 
 <h1>Steps:</h1>
 
-1. Run those comands:
+1.  Create dir for Grafana container data:
 ```bash
 mkdir grafana-data
 ```
@@ -13,7 +13,7 @@ mkdir grafana-data
 ```bash
 docker build -t grafana-container .
 ```
-3. 3. Run docker container:
+3. Run docker container:
 
 -p - run on port<br />
 -v - mount grafana-data to container<br />
