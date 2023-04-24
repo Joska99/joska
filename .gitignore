@@ -16,3 +16,4 @@ docker/comands.txt
 /docker/grafana/grafana-data/
 docker/grafana/grafana.ini
 docker/grafana/grafana.ini
+docker/prometheus/prometheus-htpasswd
