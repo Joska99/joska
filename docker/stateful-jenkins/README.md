@@ -43,7 +43,7 @@ cat /var/jenkins_home/secrets/initialAdminPassword
 3. Enter the output as a password
 4. Create your credentials, next time you connect to the container by them
 5. Install all required plugins
-
+ 
 <h2>Save all data to Next time:</h2>
 
 1. Run to copy data to your local machine 
