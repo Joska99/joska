@@ -28,7 +28,7 @@ docker run -p 3000:3000 -v grafana-data:/var/lib/grafana -d --name my-graf --res
 4. Connect to localhost:3000
 5. login: pswd: or Skip
 
-<h2>Befor delete do this:</h2>
+<h2>Save all data to Next time:</h2>
 
 1.  Run to copy data to your localc machine:
 ```bash
