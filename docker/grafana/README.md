@@ -13,7 +13,7 @@ mkdir grafana-data
 ```bash
 docker build -t grafana-container .
 ```
-3. Run docker container:
+3. Run Docker container:
 
 -p - run on port<br />
 -v - mount grafana-data to container<br />

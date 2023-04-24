@@ -14,7 +14,7 @@ mkdir jenkins_home
 ```Bash
 docker build -t stateful-jenkins --no-cache .
 ```
-3. Run docker container:
+3. Run Docker container:
 
 -p - run on port<br />
 -v - mount docker.socket to container<br />

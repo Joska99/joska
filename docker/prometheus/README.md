@@ -6,13 +6,15 @@
 
 <h1>Steps:</h1>
 
-1. Run those comands:
+1. Build Docker image:
 ```bash
-sudo service docker start  
 docker build -t prometheus-container .
+```
+2. Run Docker container:
+```bash
 docker run -p 9000:9090  -d --name my-prom --restart=on-failure -t prometheus-container
 ```
-2. Connect to localhost:9000 
+3. Connect to localhost:9000 
 
 <h2>To delete:</h2>
 

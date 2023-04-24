@@ -5,14 +5,22 @@
 
 <h1>Steps:</h1>
 
-1. navigate to 'd-ex2' dir and run those commands:
+1. Build Docker image:
 ```bash
-sudo service docker start 
 docker build -t my-nx .
+```
+2. Run Docker container:
+
+-p - run on port<br />
+-d - detach mode<br />
+--name - chose container name<br />
+-t - image tag to run<br />
+
+```Bash
 docker run --name html -p 8000:80 -d -t my-nx 
 ```
-2. Open your browser and navigate to: localhost:8000
-3. Click on a 'about' button to navigate to: localhost:8000/about.html
+3. Open your browser and navigate to: localhost:8000
+4. Click on a 'about' button to navigate to: localhost:8000/about.html
 
 
 
