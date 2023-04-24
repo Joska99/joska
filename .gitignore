@@ -15,5 +15,3 @@ docker/comands.txt
 /docker/stateful-jenkins/jenkins_home/
 /docker/grafana/grafana-data/
 docker/grafana/grafana.ini
-docker/grafana/grafana.ini
-docker/prometheus/prometheus-htpasswd
