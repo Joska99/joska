@@ -16,3 +16,4 @@ terraform/tf-aks/ias/terraform.tfstate.backup
 terraform/tf-aks/ias/main.tfplan
 terraform/tf-aks/ias/.terraform.tfstate.lock.info
 terraform/tf-aks/ias/.terraform.lock.hcl
+terraform/tf-aks/ias/kubeconfig

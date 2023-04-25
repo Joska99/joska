@@ -4,8 +4,8 @@
 <img src="https://github.com/Joska99/joska/blob/main/kubernetes/k8s-prom/diagram.drawio.svg">
 
 <h1> Requirements </h1>
-/ TODO: Add link to tf aks
-1. AKS cluster 
+
+1. [AKS cluster](https://github.com/Joska99/joska/tree/main/terraform/tf-aks) 
 
 <h2> Steps: </h2>
 
@@ -71,14 +71,19 @@ SERVICE_PRINCIPAL_NAME=SP_NAME
 CLUSTER_RG_ID=$(az group show --name $CLUSTER_RG --query "id" --output tsv)
 WORK_RG_ID=$(az group show --name $WORK_RG --query "id" --output tsv)
 ```
-3. Create Service Principal and save Username and Password in variables
+3. Create Service Principal and save Username and Password in variables and add RBAC
 ```Bash
 PASSWORD=$(az ad sp create-for-rbac --name $SERVICE_PRINCIPAL_NAME --scopes $CLUSTER_RG_ID --role="Monitoring Reader" --query "password" --output tsv)
 USER_NAME=$(az ad sp list --display-name $SERVICE_PRINCIPAL_NAME --query "[].appId" --output tsv)
 ```
-4. Add RBAC role to Service Principal to Workspace RG
+4. Run to chek credentials
 ```Bash
-az role assignment create --assignee $USER_NAME  --scope $WORK_RG_ID --role="Monitoring Reader"
+echo $PASSWORD
+echo $USER_NAME
 ``` 
+<h2>Clear up:</h2>
 
+1. Run this to delete deployment:
+```bash
 helm uninstall [RELEASE_NAME]
+```
