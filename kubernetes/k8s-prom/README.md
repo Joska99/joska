@@ -1,5 +1,10 @@
-<h1> Requirements </h1>
+<p align="center">
+<h1>Kubernetes Cluster Motitored by Prometheus + Grafana</h1>
+# TODO: Create diagram
+<img src="https://github.com/Joska99/joska/blob/main/kubernetes/k8s-prom/diagram.drawio.svg">
 
+<h1> Requirements </h1>
+/ TODO: Add link to tf aks
 1. AKS cluster 
 
 <h2> Steps: </h2>
