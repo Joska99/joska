@@ -4,14 +4,9 @@ terraform/tf-ex1/ex.tfplan
 terraform/tf-ex1/terraform.tfstate.backup
 terraform/tf-ex1/terraform.tfstate
 terraform/tf-ex1/ex1.tfplan
-/python/Decorators/__pycache__/
-/python/Decorators/__pycache__/monitoredD.cpython-39.pyc
-python/OS/__pycache__/OS1.cpython-39.pyc
-kubernetes/ConnectToCluster.txt
-docker/comands.txt
-/.vscode/
+.vscode/
 /.vscode/launch.json
 /.vscode/settings.json
 /docker/stateful-jenkins/jenkins_home/
 /docker/grafana/grafana-data/
-docker/grafana/grafana.ini
+/docker/grafana/grafana.ini/
