@@ -1,5 +1,5 @@
 <p align="center">
-<h1>Terraform module for AKS,ACR and Log Analitics</h1>
+<h1>Terraform module for AKS, ACR and Log Analitics</h1>
 <img src="https://github.com/Joska99/joska/blob/main/terraform/tf-aks/diagram.drawio.svg">
 </p>
 
@@ -9,19 +9,23 @@
 ```bash 
 az login 
 ```
-2. Nawigate to "ias" folder and init Terraform:
+2. Move to "ias" folder and init Terraform:
+```bash
+terraform init 
+```
+3. Chek terraform module and output plan:
 ```bash
 terraform plan -out main.tfplan
 ```
-3. Apply module:
+4. Apply module:
 ```bash
 terraform apply main.tfplan
 ```
-4. Connect to newly created AKS cluster:
+5. Connect to newly created AKS cluster:
 ```bash
 az aks get-credentials --resource-group aks-rg --name joska-cluster
 ```
-5. Move kubeeconfig to cluster:
+6. Move kubeeconfig to cluster:
 ```bash
 mv kubeconfig ~/.kube/config
 ```
