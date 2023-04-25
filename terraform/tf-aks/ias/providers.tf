@@ -1,4 +1,4 @@
-## azure provider and version
+# azure provider and version
 terraform {
   required_providers {
     azurerm = {
@@ -8,7 +8,6 @@ terraform {
   }
 }
 
-## config provider
 provider "azurerm" {
   features {}
 }

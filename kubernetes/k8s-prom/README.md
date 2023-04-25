@@ -37,7 +37,7 @@ helm install [RELEASE_NAME] prometheus-community/kube-prometheus-stack
 ```
 4. Forvard Grafana Service to your localhost:3000 and connect to it:
 ```bash
-kubectl port-forward srvice/<Service_NAME> 3000:80
+kubectl port-forward service/<Service_NAME> 3000:80
 ```
 5. Get User and Paswd for GRAFANA:
 - Get Username
