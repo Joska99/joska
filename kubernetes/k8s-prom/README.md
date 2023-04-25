@@ -17,7 +17,7 @@ az account set --subscription <subscription-name-or-id>
 ```bash
 az aks get-credentials --resource-group <resource-group-name> --name <aks-cluster-name>
 ```
-2. Get Helm repo from Prometheus aand Update:
+2. Get Helm repo from Prometheus and Update:
 - Get repo
 ```Bash
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
@@ -30,25 +30,50 @@ helm repo update
 ```Bash
 helm install [RELEASE_NAME] prometheus-community/kube-prometheus-stack
 ```
-4. Forvard Grafana pod to your localhost and connect to it:
+4. Forvard Grafana Service to your localhost:3000 and connect to it:
 ```bash
-kubectl port-forward <POD_NAME> :8080
+kubectl port-forward srvice/<Service_NAME> 3000:80
 ```
 5. Get User and Paswd for GRAFANA:
-- get Username
+- Get Username
 ```bash
-kubectl get secret <POD_NAME>  -o=jsonpath='{.data.admin-user}' |base64 -d 
+kubectl get secret <SERVICE_NAME>  -o=jsonpath='{.data.admin-user}' |base64 -d 
 ```
 - Get password
 ```bash
-kubectl get secret <POD_NAME> -o=jsonpath='{.data.admin-password}' |base64 -d
+kubectl get secret <SERVICE_NAME> -o=jsonpath='{.data.admin-password}' |base64 -d
 ```
+6. In Grafana Portal go to 'Configurations' -> 'Data sources' and click 'Add new data source'
+7. Enter Azure Seervice Principal Credentials Verify and Save
+- Application ID = USER_NAME
+- Client Secret = PASSWORD
+- Directory ID = AZURE AD ID
+- Then load subscriptions
+8. Go to "Dashboard" -> "Import", 10956 enter this and click on load and then import to aplly custom dashboard
 
 
-1. SP and RBAC for Cluster RG
-az ad sp create-for-rbac --role="Monitoring Reader" --scope="""/subscriptions/70b91582-1ca1-4c13-a064-09ec3e6d461f/resourceGroups/akscluster"
-2. RBAC For LGA RG
-az ad sp create-for-rbac --role="Monitoring Reader" --scope="""/subscriptions/70b91582-1ca1-4c13-a064-09ec3e6d461f/resourceGroups/akscluster"
+<h2> Create Service Principal and add RBAC:</h2>
 
+> In Azuer Portal CLI create Service Principal for Grafana:
+1. Create variables
+``` Bash
+CLUSTER_RG=CLUSTER_RG
+WORK_RG=WORK_RG
+SERVICE_PRINCIPAL_NAME=SP_NAME
+```
+2. Get RGS ID
+```Bash
+CLUSTER_RG_ID=$(az group show --name $CLUSTER_RG --query "id" --output tsv)
+WORK_RG_ID=$(az group show --name $WORK_RG --query "id" --output tsv)
+```
+3. Create Service Principal and save Username and Password in variables
+```Bash
+PASSWORD=$(az ad sp create-for-rbac --name $SERVICE_PRINCIPAL_NAME --scopes $CLUSTER_RG_ID --role="Monitoring Reader" --query "password" --output tsv)
+USER_NAME=$(az ad sp list --display-name $SERVICE_PRINCIPAL_NAME --query "[].appId" --output tsv)
+```
+4. Add RBAC role to Service Principal to Workspace RG
+```Bash
+az role assignment create --assignee $USER_NAME  --scope $WORK_RG_ID --role="Monitoring Reader"
+``` 
 
 helm uninstall [RELEASE_NAME]
