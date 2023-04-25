@@ -1,5 +1,5 @@
 <p align="center">
-<h1>Kubernetes Cluster Motitored by Prometheus + Grafana</h1>
+<h1>Helm deployment to Kubernetes with Prometheus+Grafana monitoring</h1>
 <img src="https://github.com/Joska99/joska/blob/main/kubernetes/k8s-prom/diagram.drawio.svg">
 
 <h1> Requirements </h1>
