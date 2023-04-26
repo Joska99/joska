@@ -26,7 +26,14 @@ docker build -t grafana-container .
 docker run -p 3000:3000 -v grafana-data:/var/lib/grafana -d --name my-graf --restart=on-failure -t grafana-container
 ```
 4. Connect to localhost:3000
-5. login: pswd: or Skip
+5. login: admin  pswd: prom-operator 
+
+<h2> Change Admin  Paswd for Grafana:</h2>
+
+- Change password
+```bash
+docker exec -it <CONTAINER_NAME> grafana-cli admin reset-admin-password <PASSWORD>
+```
 
 <h2>Save all data to Next time:</h2>
 

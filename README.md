@@ -27,16 +27,16 @@
 
 <h1>Docker labs</h1>
 
-1. +[Stateful Jenkins Container with plugins](https://github.com/Joska99/joska/blob/main/docker/stateful-jenkins)
+1. [Stateful Jenkins Container with plugins](https://github.com/Joska99/joska/blob/main/docker/stateful-jenkins)
 <img src="https://github.com/Joska99/joska/blob/main/docker/stateful-jenkins/diagram.drawio.svg">
 
-2. +[Prometheus Container with config file](https://github.com/Joska99/joska/tree/main/docker/prometheus)
+2. [Prometheus Container with config file](https://github.com/Joska99/joska/tree/main/docker/prometheus)
 <img src="https://github.com/Joska99/joska/blob/main/docker/prometheus/diagram.drawio.svg">
 
-3. +[Grafana Container with Data](https://github.com/Joska99/joska/tree/main/docker/grafana)
+3. [Grafana Container with Data](https://github.com/Joska99/joska/tree/main/docker/grafana)
 <img src="https://github.com/Joska99/joska/blob/main/docker/grafana/diagram.drawio.svg">
 
-4. +[Nginx Container with multiple HTML pages](https://github.com/Joska99/joska/blob/main/docker/html)
+4. [Nginx Container with multiple HTML pages](https://github.com/Joska99/joska/blob/main/docker/html)
 <img src="https://github.com/Joska99/joska/blob/main/docker/html/diagram.drawio.svg">
 </p>
 

@@ -17,7 +17,7 @@ docker build -t my-nx .
 -t - image tag to run<br />
 
 ```Bash
-docker run --name html -p 8000:80 -d -t my-nx 
+docker run --name html -p 7000:80 -d -t my-nx 
 ```
 3. Open your browser and navigate to: localhost:8000
 4. Click on a 'about' button to navigate to: localhost:8000/about.html

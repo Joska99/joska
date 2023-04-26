@@ -12,7 +12,7 @@ mkdir jenkins_home
 ```
 2. Build Docker image:
 ```Bash
-docker build -t stateful-jenkins --no-cache .
+docker build -t stateful-jenkins  .
 ```
 3. Run Docker container:
 

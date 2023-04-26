@@ -5,19 +5,15 @@ global:
 scrape_configs:
   - job_name: prometheus
     static_configs:
-      #TODO:  your PC IP address
+      # your PC IP address
       - targets: ["172.29.132.90:9000"]
 
-    # - job_name: jenkins
-    #   # Instal plugin on jenkins and add path
-    #   metrics_path: /prometheus
-    #   static_configs:
-    #     - targets: ["172.29.132.90:8000"]
+  - job_name: jenkins
+    # Instal plugin on jenkins and add path
+    metrics_path: /prometheus
+    static_configs:
+      - targets: ["172.29.132.90:8000"]
 
-    # - job_name: grafana
-    #   static_configs:
-    #     - targets: ["172.29.132.90:3000"]
-
-    # basic_auth:
-    #   username: joseph
-    #   password_file: /etc/prometheus/prometheus-htpasswd
+  - job_name: grafana
+    static_configs:
+      - targets: ["172.29.132.90:3000"]
