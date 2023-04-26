@@ -1,11 +1,11 @@
-.vscode/
+/.vscode/
 /.vscode/launch.json
 /.vscode/settings.json
 
 
 /docker/stateful-jenkins/jenkins_home/
 /docker/grafana/grafana-data/
-/docker/grafana/grafana.ini/
+/docker/grafana/grafana.ini
 
 
 
@@ -19,3 +19,9 @@ terraform/tf-aks/ias/.terraform.lock.hcl
 terraform/tf-aks/ias/kubeconfig
 terraform/tf-aks/ias/.terraform/terraform.tfstate
 
+terraform/tf-ex1/IaS/.terraform.lock.hcl
+terraform/tf-ex1/IaS/.terraform.tfstate.lock.info
+terraform/tf-ex1/IaS/.terraform/providers/registry.terraform.io/hashicorp/azurerm/3.45.0/linux_amd64/terraform-provider-azurerm_v3.45.0_x5
+terraform/tf-ex1/IaS/main.tfplan
+terraform/tf-ex1/IaS/terraform.tfstate
+terraform/tf-ex1/IaS/terraform.tfstate.backup
