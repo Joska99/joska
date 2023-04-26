@@ -3,6 +3,10 @@
 <img src="https://github.com/Joska99/joska/blob/main/kubernetes/Lab-1/diagram.drawio.svg">
 </p>
 
+<h1> Requirements </h1>
+
+1. [AKS cluster](https://github.com/Joska99/joska/tree/main/terraform/tf-aks) 
+
 <h1>Steps:</h1>
 
 1. From Azure Portal open CLI bash
