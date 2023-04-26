@@ -19,8 +19,8 @@ docker build -t my-nx .
 ```Bash
 docker run --name html -p 7000:80 -d -t my-nx 
 ```
-3. Open your browser and navigate to: localhost:8000
-4. Click on a 'about' button to navigate to: localhost:8000/about.html
+3. Open your browser and navigate to: localhost:7000
+4. Click on a 'about' button to navigate to: localhost:7000/about.html
 
 
 
