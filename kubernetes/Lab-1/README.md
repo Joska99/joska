@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="https://github.com/Joska99/joska/blob/main/kubernetes/Lab-1/diagram.drawio.svg">
+<h1>Ingres with multiple services</h1>
+<img src="https://github.com/Joska99/joska/blob/main/kubernetes/Lab-1/diagram.drawio.svg">
 </p>
 
 <h1>Steps:</h1>
@@ -13,15 +14,25 @@ az aks get-credentials --resource-group <"RG_NAME"> --name <"AKS_NAME">
 ```bash
 git clone https://github.com/Joska99/joska/tree/main/kubernetes/Lab-1
 ```
-4. Aplly manifest dir on clluster:
+4. Deploy the required resources of the Ingress controller:
 ```bash
-kubectl aplly -f ./manifest
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.1/deploy/static/provider/cloud/deploy.yaml
 ```
-5. open browser and check https://"ingress-external-ip"/bird, https://"ingress-external-ip"/cats and https://"ingress-external-ip"/dogs
+5. Aplly manifest dir on clluster:
+```bash
+kubectl apply -f ./manifests
+```
+6. open browser and check https://"ingress-external-ip"/bird, https://"ingress-external-ip"/cats and https://"ingress-external-ip"/dogs
+```bash
+kubectl get svc ingress-nginx-controller -n ingress-nginx
+```
 
 
 <h2>To delete:</h2>
 
 ```Bash
 kubectl delete all --all
+kubectl delete ingress --all
+kubectl delete all --all -n ingress-nginx
+kubectl delete namespace ingress-nginx
 ```
