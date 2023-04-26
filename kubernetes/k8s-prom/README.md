@@ -38,7 +38,7 @@ helm install [RELEASE_NAME] prometheus-community/kube-prometheus-stack
 ```bash
 kubectl port-forward service/<Service_NAME> 3000:80
 ```
-5. Get User and Paswd for GRAFANA:
+5. Get User and Paswd for Grafana:
 - Get Username
 ```bash
 kubectl get secret <SERVICE_NAME>  -o=jsonpath='{.data.admin-user}' |base64 -d 
