@@ -3,11 +3,14 @@
 <p align="center">
 <h1>CI/CD labs</h1>
 
-1. [Pipline automatically buil Docker image and Push to DockerHub using Jenkins](https://github.com/Joska99/jenkins-docker-pip)
-<img src="https://github.com/Joska99/jenkins-docker-pip/blob/main/diagram.drawio.svg">
-
-2. [Pipline that automatically buil Docker image, Push to DockerHub and ACR, and Deploy to AKS cluster using Jenkins](https://github.com/Joska99/jenkins-kubernetes-pip)
+1. [Pipline that automatically buil Docker image, Push to DockerHub and ACR, and Deploy to AKS cluster using Jenkins](https://github.com/Joska99/jenkins-kubernetes-pip)
 <img src="https://github.com/Joska99/jenkins-kubernetes-pip/blob/main/diagram.drawio.svg">
+
+2. [Jenkins CI/CD Terraform deploy to Azur](https://github.com/Joska99/jenkins-terraform)
+<img src="https://github.com/Joska99/jenkins-terraform/blob/main/diagram.drawio.svg">
+
+3. [Pipline automatically buil Docker image and Push to DockerHub using Jenkins](https://github.com/Joska99/jenkins-docker-pip)
+<img src="https://github.com/Joska99/jenkins-docker-pip/blob/main/diagram.drawio.svg">
 
 <h1>Kubernetes labs</h1>
 
