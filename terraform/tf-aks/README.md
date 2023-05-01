@@ -1,5 +1,5 @@
 <p align="center">
-<h1>Terraform module for AKS, ACR and Log Analitics</h1>
+<h1>Terraform module for Azure - AKS, ACR and Log Analitics</h1>
 <img src="https://github.com/Joska99/joska/blob/main/terraform/tf-aks/diagram.drawio.svg">
 </p>
 
@@ -54,7 +54,7 @@ ACCOUNT_KEY=$(az storage account keys list --resource-group aks-rg  --account-na
 ```bash
 $env:ARM_ACCESS_KEY=$ACCOUNT_KEY
 ```
-6. Init changes and say yes 
+6. Uncoment backend in providers and add Storage account Credentials, Init changes and say yes 
 ```bash
 terraform init 
 ```
