@@ -22,10 +22,10 @@
 
 <h1>Terraform labs</h1>
 
-1. [Teraform module - AKS, ACR and Log Analytics](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-aks-la)
+1. [Terraform module - AKS, ACR and Log Analytics](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-aks-la)
 <img src="https://github.com/Joska99/joska/blob/main/terraform/modules/tf-aks-la/diagram.drawio.svg">
 
-2. [Terraform module - Jenkuns server in Azure configuret by Ansible](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-jenkins-server)
+2. [Terraform module - Jenkins server in Azure configured by Ansible](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-jenkins-server)
 <img src="https://github.com/Joska99/joska/blob/main/terraform/modules/tf-jenkins-server/diagram.drawio.svg">
 
 3. [Simple Terraform lab](https://github.com/Joska99/joska/blob/main/terraform/tf-ex1)
