@@ -5,30 +5,13 @@ resource "azurerm_resource_group" "aks-rg" {
   name     = var.resource_group_name
   location = var.location
 }
-
-resource "azurerm_role_assignment" "role_acrpull" {
-  scope                            = azurerm_container_registry.acr.id
-  role_definition_name             = "AcrPull"
-  principal_id                     = azurerm_kubernetes_cluster.aks.kubelet_identity.0.object_id
-  skip_service_principal_aad_check = true
-}
-############
-# CREATE ACR
-############
-resource "azurerm_container_registry" "acr" {
-  name                = var.acr_name
-  resource_group_name = azurerm_resource_group.aks-rg.name
-  location            = var.location
-  sku                 = "Standard"
-  admin_enabled       = false
-}
 ################
 # CREATE CLUSTER
 ################
 resource "azurerm_kubernetes_cluster" "aks" {
   name                = var.cluster_name
   kubernetes_version  = var.kubernetes_version
-  location            = var.location
+  location            = azurerm_resource_group.aks-rg.location
   resource_group_name = azurerm_resource_group.aks-rg.name
   dns_prefix          = var.cluster_name
 
@@ -44,21 +27,32 @@ resource "azurerm_kubernetes_cluster" "aks" {
   }
   network_profile {
     load_balancer_sku = "standard"
-    network_plugin    = "kubenet" 
+    network_plugin    = "kubenet"
   }
-#########################
-# Attach log analytics
-#########################
-  oms_agent {  
-  log_analytics_workspace_id = azurerm_log_analytics_workspace.test.id
+
+  #########################
+  # Attach log analytics
+  #########################
+  oms_agent {
+    log_analytics_workspace_id = azurerm_log_analytics_workspace.test.id
   }
 }
 
-##################
+###############################################
+#  Output to local directory 'kubeconfig' file
+##############################################
+resource "local_file" "kubeconfig" {
+  depends_on = [azurerm_kubernetes_cluster.aks]
+  filename   = "kubeconfig"
+  content    = azurerm_kubernetes_cluster.aks.kube_config_raw
+}
+# BUG: Cant detach log analitics and delete logs analitic and rg while terraform destroy
+#########################
 # CREATE LOG ANALITICS
-##################
+########################
 resource "azurerm_log_analytics_workspace" "test" {
-  location            = var.location
+  depends_on          = [azurerm_kubernetes_cluster.aks]
+  location            = azurerm_resource_group.aks-rg.location
   name                = var.log_analytics_name
   resource_group_name = azurerm_resource_group.aks-rg.name
   sku                 = var.log_analytics_sku
