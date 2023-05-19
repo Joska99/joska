@@ -1,5 +1,5 @@
 <p align="center">
-<h1>Terraform Virual Wan Hub</h1>
+<h1>Terraform Virtual Wan Hub</h1>
 <img src="https://github.com/Joska99/joska/blob/main/terraform/modules/tf-wan-hub/diagram.drawio.svg">
 </p>
 
@@ -18,4 +18,4 @@ terraform destroy --auto-approve
 ```
 
 - outputs:
-1. vhub_id = virtual hub id to connecct
+1. vhub_id = virtual hub id to connect
