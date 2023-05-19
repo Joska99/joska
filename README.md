@@ -25,8 +25,8 @@
 1. [Teraform module - AKS, ACR and Analitic Workspace](https://github.com/Joska99/joska/blob/main/terraform/tf-aks)
 <img src="https://github.com/Joska99/joska/blob/main/terraform/tf-aks/diagram.drawio.svg">
 
-2. [Terraform module - Jenkuns server in Azure configuret by Ansible](https://github.com/Joska99/joska/blob/main/terraform/tf-jenkins-server)
-<img src="https://github.com/Joska99/joska/blob/main/terraform/tf-jenkins-server/diagram.drawio.svg">
+2. [Terraform module - Jenkuns server in Azure configuret by Ansible](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-jenkins-server)
+<img src="https://github.com/Joska99/joska/blob/main/terraform/modules/tf-jenkins-server/diagram.drawio.svg">
 
 3. [Simple Terraform lab](https://github.com/Joska99/joska/blob/main/terraform/tf-ex1)
 <img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex1/diagram.drawio.svg">

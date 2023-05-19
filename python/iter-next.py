@@ -30,7 +30,7 @@ class LLIterator:
             raise StopIteration()
 
 
-#TODO: xs = (1, (2, (3, (4, (5, ())))))
+# TODO: xs = (1, (2, (3, (4, (5, ())))))
 xs = LinkedList(1, 2, 3, 4, 5)
 print(xs)
 xxs = [x * x for x in xs]

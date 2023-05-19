@@ -1,5 +1,5 @@
-########################
-# CREATE RESOURCES GROUP
+#################
+# RESOURCES GROUP
 resource "azurerm_resource_group" "rg" {
   name     = var.resource_group_name
   location = var.location
@@ -8,7 +8,7 @@ resource "azurerm_resource_group" "rg" {
 # Virtual Network
 resource "azurerm_virtual_network" "vnet" {
   name                = var.vnet_name
-  address_space       = ["10.0.0.0/16"]
+  address_space       = var.vnet_ip
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
 }
@@ -16,14 +16,13 @@ resource "azurerm_virtual_network" "vnet" {
 # Subnet
 resource "azurerm_subnet" "subnet" {
   name                 = var.sub_name
-  address_prefixes     = ["10.0.1.0/24"]
+  address_prefixes     = var.sub_ip
   resource_group_name  = azurerm_resource_group.rg.name
   virtual_network_name = azurerm_virtual_network.vnet.name
 
 }
 ########################
 # Network Security Group
-# TODO: this not secured, ssh open to all, find securw solution
 resource "azurerm_network_security_group" "nsg" {
   name                = "jenkins-nsg"
   location            = azurerm_resource_group.rg.location
@@ -31,7 +30,7 @@ resource "azurerm_network_security_group" "nsg" {
 
   security_rule {
     name                       = "allow"
-    priority                   = 100
+    priority                   = 200
     direction                  = "Inbound"
     access                     = "Allow"
     protocol                   = "Tcp"
@@ -40,21 +39,20 @@ resource "azurerm_network_security_group" "nsg" {
     source_address_prefix      = "*"
     destination_address_prefix = "*"
   }
-}
-################
-# NSG rules
-resource "azurerm_network_security_rule" "jenkins" {
-  name                        = "jenkins"
-  priority                    = 101
-  direction                   = "Inbound"
-  access                      = "Allow"
-  protocol                    = "Tcp"
-  source_port_range           = "*"
-  destination_port_range      = "8080"
-  source_address_prefix       = "*"
-  destination_address_prefix  = azurerm_public_ip.pip.ip_address
-  resource_group_name         = azurerm_resource_group.rg.name
-  network_security_group_name = azurerm_network_security_group.nsg.nameyes
+
+  security_rule {
+    name                       = "jenkins"
+    priority                   = 100
+    direction                  = "Inbound"
+    access                     = "Allow"
+    protocol                   = "Tcp"
+    source_port_range          = "*"
+    destination_port_range     = "8080"
+    source_address_prefix      = "*"
+    destination_address_prefix = "*"
+    # This dont right
+    # destination_address_prefix = azurerm_public_ip.pip.ip_address
+  }
 }
 ################
 # NSG Assosiate
@@ -62,6 +60,7 @@ resource "azurerm_subnet_network_security_group_association" "example" {
   subnet_id                 = azurerm_subnet.subnet.id
   network_security_group_id = azurerm_network_security_group.nsg.id
 }
+
 ###################
 # Public IP Address
 resource "azurerm_public_ip" "pip" {
@@ -84,13 +83,19 @@ resource "azurerm_network_interface" "nic" {
     private_ip_address_allocation = "Dynamic"
   }
 }
+###################################################
+# Generate key for ssh to linux vm
+resource "tls_private_key" "linux_key" {
+  algorithm = "RSA"
+  rsa_bits  = 4096
+}
 #######################
 # Linux Virtual Machine
 resource "azurerm_linux_virtual_machine" "vm" {
   name                = var.vm_name
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
-  size                = "Standard_D2s_v3"
+  size                = var.vm_size
   admin_username      = var.admin_user
   network_interface_ids = [
     azurerm_network_interface.nic.id,
@@ -116,28 +121,16 @@ resource "azurerm_linux_virtual_machine" "vm" {
     tls_private_key.linux_key
   ]
 }
-
-resource "tls_private_key" "linux_key" {
-  algorithm = "RSA"
-  rsa_bits  = 4096
-}
-
-# We want to save the private key to our machine
-# We can then use this key to connect to our Linux VM
-resource "local_file" "linuxkey" {
-  filename = "linuxkey.pem"
-  content  = tls_private_key.linux_key.private_key_pem
-}
 #################################
 # EXEC COMMANDS IN local machine
 resource "null_resource" "local" {
+  depends_on = [azurerm_linux_virtual_machine.vm]
   provisioner "local-exec" {
     command     = ". ./scripts/local.sh"
     interpreter = ["/bin/bash", "-c"]
     environment = {
       AZURE_PUBLIC_IP = azurerm_public_ip.pip.ip_address
     }
-
   }
 }
 

@@ -1,8 +1,8 @@
 #!bin/bash  
-
-ls ~/.ssh/known_hosts
-
+# install ansible
 sudo apt-get update
 sudo apt-get install -y ansible
+# install jenkins
 ansible-playbook  /tmp/playbook.yml
+
 
