@@ -1,6 +1,6 @@
 <p align="center">
 <h1>Terraform Virual Wan Hub</h1>
-<img src="https://github.com/Joska99/joska/blob/main/terraform/modules/tf-vwan-hub/diagram.drawio.svg">
+<img src="https://github.com/Joska99/joska/blob/main/terraform/modules/tf-wan-hub/diagram.drawio.svg">
 </p>
 
 <h1> Steps </h1>
