@@ -9,7 +9,7 @@
 ```bash 
 az login 
 ```
-2. Move to "ias" folder and init Terraform:
+2. Move to "IaC" folder and init Terraform:
 ```bash
 terraform init 
 ```
@@ -22,7 +22,7 @@ terraform plan -out main.tfplan
 terraform apply main.tfplan
 ```
 
-<h1> Create Storage Acount in azure by CLI to store .tfstate</h1>
+<h1> Create Storage Account in azure by CLI to store .tfstate</h1>
 
 1. Create variables
 ```bash
