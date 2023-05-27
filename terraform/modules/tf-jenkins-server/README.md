@@ -12,7 +12,6 @@ terraform init -upgrade
 terraform plan --out plan
 terraform apply plan 
 ```
-> require approval of "scp" connection to add to ~/.shh/known_hosts
 > output 'linuxkey.pem' to local dir
 
 - In your browser connect to <PUBLIC_IP_VM>:8080 to access the jenkins GUI

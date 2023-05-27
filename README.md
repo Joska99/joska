@@ -28,7 +28,7 @@
 2. [Simple Terraform lab](https://github.com/Joska99/joska/blob/main/terraform/tf-ex1)
 <img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex1/diagram.drawio.svg">
 
-3. [Hub and Spoke Terraform lab](https://github.com/Joska99/joska/blob/main/terraform/tf-ex2/hub-and-spoke-rojeckt)
+3. [Hub and Spoke Terraform lab](https://github.com/Joska99/joska/blob/main/terraform/tf-ex2/hub-and-spoke-projeckt)
 <img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex2/hub-and-spoke-project/diagram.drawio.svg"> 
 
 <h1>Docker labs</h1>
