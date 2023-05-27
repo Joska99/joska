@@ -31,6 +31,9 @@
 3. [Simple Terraform lab](https://github.com/Joska99/joska/blob/main/terraform/tf-ex1)
 <img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex1/diagram.drawio.svg">
 
+4. [Hub and Spoke Terraform lab](https://github.com/Joska99/joska/blob/main/terraform/tf-ex2)
+<img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex2/diagram.drawio.svg"> 
+
 <h1>Docker labs</h1>
 
 1. [Stateful Jenkins Container with plugins](https://github.com/Joska99/joska/blob/main/docker/stateful-jenkins)

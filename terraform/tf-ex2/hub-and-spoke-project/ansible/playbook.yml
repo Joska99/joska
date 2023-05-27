@@ -1,0 +1,48 @@
+- name: Install Jenkins on Ubuntu VM in Azure
+  hosts: localhost
+  become: true
+
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install Java
+      apt:
+        name: default-jdk
+        state: present
+
+    - name: Add Jenkins repository key
+      apt_key:
+        url: https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+        state: present
+
+    - name: Add Jenkins repository
+      apt_repository:
+        repo: deb https://pkg.jenkins.io/debian-stable binary/
+        state: present
+
+    - name: Install Jenkins
+      apt:
+        name: jenkins
+        state: present
+        update_cache: yes
+
+    - name: Start Jenkins service
+      service:
+        name: jenkins
+        state: started
+
+    - name: Output admin password
+      shell: cat /var/lib/jenkins/secrets/initialAdminPassword
+      register: cat_output
+
+    - name: Print output to terminal
+      debug:
+        var: cat_output.stdout_lines
+
+    - name: Allow incoming traffic on port 8080
+      ufw:
+        rule: allow
+        proto: tcp
+        port: 8080

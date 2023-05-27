@@ -23,6 +23,7 @@ resource "azurerm_virtual_hub" "vhub" {
   address_prefix      = var.vhub_ip
 }
 # #######################
+# # Connect admin vm to hub
 # resource "azurerm_virtual_hub_connection" "conn_to_hub" {
 #   name                      = "admin-vm-to-vhub"
 #   virtual_hub_id            = azurerm_virtual_hub.vhub.id

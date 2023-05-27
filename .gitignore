@@ -37,3 +37,5 @@ terraform/tf-jenkins-server/.terraform.lock.hcl
 terraform/tf-jenkins-server/terraform.tfstate.backup
 .vscode/settings.json
 .vscode/settings.json
+
+terraform/tf-ex1/IaC/.terraform/providers/registry.terraform.io/hashicorp/azurerm/3.45.0/linux_amd64/terraform-provider-azurerm_v3.45.0_x5

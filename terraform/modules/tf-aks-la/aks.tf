@@ -46,7 +46,6 @@ resource "local_file" "kubeconfig" {
   filename   = "kubeconfig"
   content    = azurerm_kubernetes_cluster.aks.kube_config_raw
 }
-# BUG: Cant detach log analitics and delete logs analitic and rg while terraform destroy
 #########################
 # CREATE LOG ANALITICS
 ########################
