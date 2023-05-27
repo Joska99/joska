@@ -1,6 +1,6 @@
 <p align="center">
 <h1>Terraform Hub and Spoke</h1>
-<img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex2/diagram.drawio.svg">
+<img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex2/hub-and-spoke-project/diagram.drawio.svg">
 </p>
 
 <h1> Steps </h1>
