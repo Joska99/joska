@@ -3,13 +3,13 @@
 <p align="center">
 <h1>CI/CD labs</h1>
 
-1. [Pipline that automatically buil Docker image, Push to DockerHub and ACR, and Deploy to AKS cluster using Jenkins](https://github.com/Joska99/jenkins-k8s)
+1. [Jenkins CI/CD Pipeline - Build Docker image, Push to DockerHub and ACR, and Deploy to AKS cluster](https://github.com/Joska99/jenkins-k8s)
 <img src="https://github.com/Joska99/jenkins-k8s/blob/main/diagram.drawio.svg">
 
-2. [Jenkins CI/CD Terraform deploy to Azur](https://github.com/Joska99/jenkins-terraform)
+2. [Jenkins CD Pipeline - Terraform deploy AKS to Azur](https://github.com/Joska99/jenkins-terraform)
 <img src="https://github.com/Joska99/jenkins-terraform/blob/main/diagram.drawio.svg">
 
-3. [Pipline automatically buil Docker image and Push to DockerHub using Jenkins](https://github.com/Joska99/jenkins-docker)
+3. [Jenkins CI Pipeline - Build Docker image and Push to DockerHub](https://github.com/Joska99/jenkins-docker)
 <img src="https://github.com/Joska99/jenkins-docker/blob/main/diagram.drawio.svg">
 
 <h1>Kubernetes labs</h1>
@@ -25,7 +25,7 @@
 1. [Terraform module - Jenkins server in Azure configured by Ansible](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-jenkins-server)
 <img src="https://github.com/Joska99/joska/blob/main/terraform/modules/tf-jenkins-server/diagram.drawio.svg">
 
-2. [Minecraft Server Terraform lab](https://github.com/Joska99/joska/blob/main/terraform/tf-ex3)
+2. [Terraform module - Minecraft Server ](https://github.com/Joska99/joska/blob/main/terraform/tf-ex3)
 <img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex3/diagram.drawio.svg">
 
 3. [Hub and Spoke Terraform lab](https://github.com/Joska99/joska/blob/main/terraform/tf-ex2/hub-and-spoke-project)
