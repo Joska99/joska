@@ -45,7 +45,7 @@ cat /var/jenkins_home/secrets/initialAdminPassword
 
 1. Run to copy data to your local machine 
 ```bash
-docker cp stf-jenkins:/var/jenkins_home .
+docker cp jenkins:/var/jenkins_home .
 ```
 
 <h2>To delete:</h2>

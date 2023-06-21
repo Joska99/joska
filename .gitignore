@@ -1,41 +1,7 @@
-/.vscode/
-/.vscode/launch.json
-/.vscode/settings.json
-
 
 /docker/jenkins/jenkins_home/
 /docker/grafana/grafana-data/
 /docker/grafana/grafana.ini
 
+/python/args-os-sys/OS/OS1.py
 
-
-terraform/tf-aks/ias/.terraform/providers/registry.terraform.io/hashicorp/random/3.5.1/linux_amd64/terraform-provider-random_v3.5.1_x5
-terraform/tf-aks/ias/.terraform/providers/registry.terraform.io/hashicorp/local/2.4.0/linux_amd64/terraform-provider-local_v2.4.0_x5
-terraform/tf-aks/ias/.terraform/providers/registry.terraform.io/hashicorp/azurerm/3.45.0/linux_amd64/terraform-provider-azurerm_v3.45.0_x5
-terraform/tf-aks/ias/terraform.tfstate.backup
-terraform/tf-aks/ias/main.tfplan
-terraform/tf-aks/ias/.terraform.tfstate.lock.info
-terraform/tf-aks/ias/.terraform.lock.hcl
-terraform/tf-aks/ias/kubeconfig
-terraform/tf-aks/ias/.terraform/terraform.tfstate
-terraform/tf-ex1/IaS/.terraform.lock.hcl
-terraform/tf-ex1/IaS/.terraform.tfstate.lock.info
-terraform/tf-ex1/IaS/.terraform/providers/registry.terraform.io/hashicorp/azurerm/3.45.0/linux_amd64/terraform-provider-azurerm_v3.45.0_x5
-terraform/tf-ex1/IaS/main.tfplan
-terraform/tf-ex1/IaS/terraform.tfstate
-terraform/tf-ex1/IaS/terraform.tfstate.backup
-terraform/tf-jenkins-server/.terraform/providers/registry.terraform.io/hashicorp/tls/4.0.4/linux_amd64/terraform-provider-tls_v4.0.4_x5
-terraform/tf-jenkins-server/.terraform/providers/registry.terraform.io/hashicorp/null/3.2.1/linux_amd64/terraform-provider-null_v3.2.1_x5
-terraform/tf-jenkins-server/.terraform/providers/registry.terraform.io/hashicorp/azurerm/3.45.0/linux_amd64/terraform-provider-azurerm_v3.45.0_x5
-terraform/tf-jenkins-server/terraform.tfstate
-terraform/tf-jenkins-server/plan
-terraform/tf-jenkins-server/linuxkey.pem
-terraform/tf-jenkins-server/.terraform/providers/registry.terraform.io/hashicorp/local/2.4.0/linux_amd64/terraform-provider-local_v2.4.0_x5
-terraform/tf-jenkins-server/.terraform.lock.hcl
-.vscode/settings.json
-.vscode/settings.json
-terraform/tf-jenkins-server/terraform.tfstate.backup
-.vscode/settings.json
-.vscode/settings.json
-
-terraform/tf-ex1/IaC/.terraform/providers/registry.terraform.io/hashicorp/azurerm/3.45.0/linux_amd64/terraform-provider-azurerm_v3.45.0_x5

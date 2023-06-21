@@ -8,12 +8,12 @@ scrape_configs:
       # your PC IP address
       - targets: ["172.29.132.90:9000"]
 
-  - job_name: jenkins
-    # Instal plugin on jenkins and add path
-    metrics_path: /prometheus
-    static_configs:
-      - targets: ["172.29.132.90:8000"]
+  # - job_name: jenkins
+  #   # Instal plugin on jenkins and add path
+  #   metrics_path: /prometheus
+  #   static_configs:
+  #     - targets: ["172.29.132.90:8000"]
 
-  - job_name: grafana
-    static_configs:
-      - targets: ["172.29.132.90:3000"]
+  # - job_name: grafana
+  #   static_configs:
+  #     - targets: ["172.29.132.90:3000"]
