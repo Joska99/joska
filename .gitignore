@@ -3,7 +3,7 @@
 /.vscode/settings.json
 
 
-/docker/stateful-jenkins/jenkins_home/
+/docker/jenkins/jenkins_home/
 /docker/grafana/grafana-data/
 /docker/grafana/grafana.ini
 

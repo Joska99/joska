@@ -29,7 +29,6 @@ resource "azurerm_container_registry" "acr" {
 }
 ###############################################################################################################
 # Storage Acc 
-# TODO: add variabless
 # Create Storage Account
 resource "azurerm_storage_account" "sa" {
   name                     = var.sa_name

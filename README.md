@@ -6,7 +6,7 @@
 1. [Jenkins CI/CD Pipeline - Build Docker image, Push to DockerHub and ACR, and Deploy to AKS cluster](https://github.com/Joska99/jenkins-k8s)
 <img src="https://github.com/Joska99/jenkins-k8s/blob/main/diagram.drawio.svg">
 
-2. [Jenkins CD Pipeline - Terraform deploy AKS to Azur](https://github.com/Joska99/jenkins-terraform)
+2. [Jenkins CD Pipeline - Terraform deploy AKS to Azure](https://github.com/Joska99/jenkins-terraform)
 <img src="https://github.com/Joska99/jenkins-terraform/blob/main/diagram.drawio.svg">
 
 3. [Jenkins CI Pipeline - Build Docker image and Push to DockerHub](https://github.com/Joska99/jenkins-docker)
@@ -14,10 +14,18 @@
 
 <h1>Kubernetes labs</h1>
 
-1. [Helm deployment to Kubernetes with Prometheus+Grafana monitoring](https://github.com/Joska99/joska/blob/main/kubernetes/k8s-prom)
+<!-- TODO: ADD DIAGRAM -->
+1. [Helm chart deploy static HTML page by Python Flask](https://github.com/Joska99/Targil1090)
+<img src="">
+
+<!-- TODO: ADD DIAGRAMS -->
+2. [ArgoCD guide for Kubernetes](https://github.com/Joska99/ArgoCD)
+<img src="">
+
+3. [Helm deployment to Kubernetes with Prometheus+Grafana monitoring](https://github.com/Joska99/joska/blob/main/kubernetes/k8s-prom)
 <img src="https://github.com/Joska99/joska/blob/main/kubernetes/k8s-prom/diagram.drawio.svg">
 
-2. [Ingres with multiple services](https://github.com/Joska99/joska/blob/main/kubernetes/Lab-1)
+4. [Ingres with multiple services](https://github.com/Joska99/joska/blob/main/kubernetes/Lab-1)
 <img src="https://github.com/Joska99/joska/blob/main/kubernetes/Lab-1/diagram.drawio.svg">
 
 <h1>Terraform labs</h1>
@@ -36,8 +44,8 @@
 
 <h1>Docker labs</h1>
 
-1. [Stateful Jenkins Container with plugins](https://github.com/Joska99/joska/blob/main/docker/stateful-jenkins)
-<img src="https://github.com/Joska99/joska/blob/main/docker/stateful-jenkins/diagram.drawio.svg">
+1. [Jenkins Container with plugins](https://github.com/Joska99/joska/blob/main/docker/jenkins)
+<img src="https://github.com/Joska99/joska/blob/main/docker/jenkins/diagram.drawio.svg">
 
 2. [Prometheus Container with config file](https://github.com/Joska99/joska/tree/main/docker/prometheus)
 <img src="https://github.com/Joska99/joska/blob/main/docker/prometheus/diagram.drawio.svg">
@@ -45,7 +53,7 @@
 3. [Grafana Container with Data](https://github.com/Joska99/joska/tree/main/docker/grafana)
 <img src="https://github.com/Joska99/joska/blob/main/docker/grafana/diagram.drawio.svg">
 
-4. [Nginx Container with multiple HTML pages](https://github.com/Joska99/joska/blob/main/docker/html)
-<img src="https://github.com/Joska99/joska/blob/main/docker/html/diagram.drawio.svg">
+4. [Nginx Container with multiple HTML pages](https://github.com/Joska99/joska/blob/main/docker/nginx)
+<img src="https://github.com/Joska99/joska/blob/main/docker/nginx/diagram.drawio.svg">
 </p>
 
