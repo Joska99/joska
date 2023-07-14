@@ -14,9 +14,8 @@
 
 <h1>Kubernetes labs</h1>
 
-<!-- TODO: ADD DIAGRAM -->
 1. [Helm chart deploy static HTML page by Python Flask](https://github.com/Joska99/Targil1090)
-<img src="">
+<img src="https://github.com/Joska99/Targil1090/blob/master/helm-flask-html.drawio.svg">
 
 <!-- TODO: ADD DIAGRAMS -->
 2. [ArgoCD guide for Kubernetes](https://github.com/Joska99/ArgoCD)
