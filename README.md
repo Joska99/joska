@@ -28,17 +28,17 @@
 
 <h2> Jenkins CI/CD labs </h2>
 
+1. [Jenkins CI Pipeline - Build Docker image and Push to DockerHub](https://github.com/Joska99/jenkins-docker)
+<img src="https://github.com/Joska99/jenkins-docker/blob/main/diagram.drawio.svg">
+
 <!-- TODO: update -->
-1. [Jenkins CI/CD Pipeline - Build Docker image, Push to DockerHub and ACR, and Deploy to AKS cluster](https://github.com/Joska99/jenkins-k8s)
+2. [Jenkins CI/CD Pipeline - Build Docker image, Push to DockerHub and ACR, and Deploy to AKS cluster](https://github.com/Joska99/jenkins-k8s)
 <img src="https://github.com/Joska99/jenkins-k8s/blob/main/diagram.drawio.svg">
 
 <!-- TODO: update -->
-2. [Jenkins CD Pipeline - Terraform deploy AKS to Azure](https://github.com/Joska99/jenkins-terraform)
+3. [Jenkins CD Pipeline - Terraform deploy AKS to Azure](https://github.com/Joska99/jenkins-terraform)
 <img src="https://github.com/Joska99/jenkins-terraform/blob/main/diagram.drawio.svg">
 
-<!-- TODO: add triger by webhook to jenkins, add push docker image to github too -->
-3. [Jenkins CI Pipeline - Build Docker image and Push to DockerHub](https://github.com/Joska99/jenkins-docker)
-<img src="https://github.com/Joska99/jenkins-docker/blob/main/diagram.drawio.svg">
 
 <h2> Terraform labs </h2>
 

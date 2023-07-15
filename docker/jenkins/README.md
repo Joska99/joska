@@ -1,5 +1,5 @@
-<p align="center">
 <h1>Jenkins Container with AZ, Docker, Kubectl</h1>
+<p align="center">
 <img src="https://github.com/Joska99/joska/blob/main/docker/jenkins/diagram.drawio.svg">
 </p>
 
@@ -46,6 +46,10 @@ cat /var/jenkins_home/secrets/initialAdminPassword
 1. Run to copy data to your local machine 
 ```bash
 docker cp jenkins:/var/jenkins_home .
+```
+2. To run next time with configured Jenkins run this command
+```bash
+docker run -p 8000:8080 -v jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -d --name jenkins --restart=on-failure -t jenkins
 ```
 
 <h2>To delete:</h2>
