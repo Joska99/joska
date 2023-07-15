@@ -1,4 +1,8 @@
+<p align="center">
 <h1> Joseph Kanzaveli Portfolio </h1>
+</p>
+
+<!-- TODO: add agenda and scrolling lincks to all <h2> titles -->
 
 <h2> Kubernetes labs </h2>
 
