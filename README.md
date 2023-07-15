@@ -1,6 +1,5 @@
-<p align="center">
 <h1> Joseph Kanzaveli Portfolio </h1>
-</p>
+
 
 <!-- TODO: add agenda and scrolling lincks to all <h2> titles -->
 
@@ -29,7 +28,9 @@
 <h2> Jenkins CI/CD labs </h2>
 
 1. [Jenkins CI Pipeline - Build Docker image and Push to DockerHub](https://github.com/Joska99/jenkins-docker)
+<p align="center">
 <img src="https://github.com/Joska99/jenkins-docker/blob/main/diagram.drawio.svg">
+</p>
 
 <!-- TODO: update -->
 2. [Jenkins CI/CD Pipeline - Build Docker image, Push to DockerHub and ACR, and Deploy to AKS cluster](https://github.com/Joska99/jenkins-k8s)
