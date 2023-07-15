@@ -13,10 +13,10 @@
 3. [Ingres with multiple services](https://github.com/Joska99/joska/blob/main/kubernetes/Lab-1)
 <img src="https://github.com/Joska99/joska/blob/main/kubernetes/Lab-1/diagram.drawio.svg">
 
-4. [Helm deployment to Kubernetes with Prometheus+Grafana monitoring](https://github.com/Joska99/joska/blob/main/kubernetes/k8s-prom)
-<img src="https://github.com/Joska99/joska/blob/main/kubernetes/k8s-prom/diagram.drawio.svg">
+4. [Helm deployment to Kubernetes, Prometheus+Grafana chart](https://github.com/Joska99/joska/blob/main/kubernetes/k8s-prom)
+<img src="https://github.com/Joska99/joska/blob/main/kubernetes/Lab-2/diagram.drawio.svg">
 
-<h1>CI/CD labs</h1>
+<h1>Jenkins CI/CD labs</h1>
 
 <!-- TODO: update -->
 1. [Jenkins CI/CD Pipeline - Build Docker image, Push to DockerHub and ACR, and Deploy to AKS cluster](https://github.com/Joska99/jenkins-k8s)
