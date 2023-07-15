@@ -1,10 +1,11 @@
 <p align="center">
-<h1>Helm deployment to Kubernetes with Prometheus+Grafana monitoring</h1>
+<h1>Helm deployment to Kubernetes, Prometheus+Grafana chart</h1>
 <img src="https://github.com/Joska99/joska/blob/main/kubernetes/k8s-prom/diagram.drawio.svg">
 
 <h1> Requirements </h1>
 
-1. Kubernetes cluster - [AKS cluster Terraform module](https://github.com/Joska99/joska/tree/main/terraform/modules/tf-aks-la) 
+1. Kubernetes cluster
+- [My Terraform module - AKS cluster](https://github.com/Joska99/joska/tree/main/terraform/modules/tf-aks-la) 
 
 <h2> Steps: </h2>
 
@@ -22,7 +23,7 @@ az account set --subscription <subscription-name-or-id>
 az aks get-credentials --resource-group <resource-group-name> --name <aks-cluster-name>
 ```
 
-2. Get Helm repo from Prometheus and Update:
+2. Get Helm repo from official Prometheus GitHub and Update:
 - Get repo
 ```Bash
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
@@ -87,6 +88,7 @@ USER_NAME=$(az ad sp list --display-name $SERVICE_PRINCIPAL_NAME --query "[].app
 echo $PASSWORD
 echo $USER_NAME
 ``` 
+
 <h2>Clear up:</h2>
 
 1. Run this to delete deployment:

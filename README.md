@@ -13,7 +13,6 @@
 3. [Ingres with multiple services](https://github.com/Joska99/joska/blob/main/kubernetes/Lab-1)
 <img src="https://github.com/Joska99/joska/blob/main/kubernetes/Lab-1/diagram.drawio.svg">
 
-<!-- TODO: update -->
 4. [Helm deployment to Kubernetes with Prometheus+Grafana monitoring](https://github.com/Joska99/joska/blob/main/kubernetes/k8s-prom)
 <img src="https://github.com/Joska99/joska/blob/main/kubernetes/k8s-prom/diagram.drawio.svg">
 
