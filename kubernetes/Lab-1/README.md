@@ -5,28 +5,32 @@
 
 <h1> Requirements </h1>
 
-1. [AKS cluster](https://github.com/Joska99/joska/tree/main/terraform/tf-aks) 
+1. Kubernetes cluster
+- [My Terrafoorm module - AKS cluster](https://github.com/Joska99/joska/tree/main/terraform/tf-aks) 
 
 <h1>Steps:</h1>
 
+- To connect to AKS cluster
 1. From Azure Portal open CLI bash
 2. Connect to your AKS cluster
 ```bash
 az aks get-credentials --resource-group <"RG_NAME"> --name <"AKS_NAME">
 ```
-3. Run to get Github repo:
+
+- Deploy to Kubernetes cluster
+1. Run to get Github repo:
 ```bash
 git clone https://github.com/Joska99/joska/tree/main/kubernetes/Lab-1
 ```
-4. Deploy the required resources of the Ingress controller:
+2. Deploy the required resources of the Ingress controller:
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.1/deploy/static/provider/cloud/deploy.yaml
 ```
-5. Aplly manifest dir on clluster:
+3. Aplly manifest directory on cluster:
 ```bash
 kubectl apply -f ./manifests
 ```
-6. open browser and check https://"ingress-external-ip"/bird, https://"ingress-external-ip"/cats and https://"ingress-external-ip"/dogs
+4. open browser and check https://"ingress-external-ip"/bird, https://"ingress-external-ip"/cats and https://"ingress-external-ip"/dogs
 ```bash
 kubectl get svc ingress-nginx-controller -n ingress-nginx
 ```
