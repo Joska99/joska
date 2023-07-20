@@ -33,8 +33,10 @@
 </p>
 
 <!-- TODO: update -->
-2. [Jenkins CI/CD Pipeline - Build Docker image, Push to DockerHub and ACR, and Deploy to AKS cluster](https://github.com/Joska99/jenkins-k8s)
+2. [Jenkins CI/CD pipeline - with slave in kubernetes](https://github.com/Joska99/jenkins-k8s)
+<p align="center">
 <img src="https://github.com/Joska99/jenkins-k8s/blob/main/diagram.drawio.svg">
+</p>
 
 <!-- TODO: update -->
 3. [Jenkins CD Pipeline - Terraform deploy AKS to Azure](https://github.com/Joska99/jenkins-terraform)
@@ -58,12 +60,12 @@
 <!-- TODO: update -->
 4. [Simple Terraform lab](https://github.com/Joska99/joska/blob/main/terraform/tf-ex1)
 <img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex1/diagram.drawio.svg">
+
 <!-- TODO: Add links to azure modules -->
 
 <h2> Docker labs </h2>
 
-<!-- TODO: update -->
-1. [Jenkins Container with plugins](https://github.com/Joska99/joska/blob/main/docker/jenkins)
+1. [Jenkins Container guide](https://github.com/Joska99/joska/blob/main/docker/jenkins)
 <img src="https://github.com/Joska99/joska/blob/main/docker/jenkins/diagram.drawio.svg">
 
 <!-- TODO: update -->
