@@ -5,7 +5,7 @@
 
 <h1> Steps: </h1>
 
-- Terraform init, plan with local backend from 'iac' directory
+- Terraform init, plan with local backend, run those commands from 'iac' directory
 ```bash
 terraform init
 terraform plan --out tfplan

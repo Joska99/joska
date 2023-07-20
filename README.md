@@ -6,7 +6,7 @@
 - Kubernetes:
   - [Kubernetes labs](#kubernetes-labs)
 - Jenkins:
-  - [Jenkins labs](#jenkins-ci/cd-labs)
+  - [Jenkins labs](#jenkins-labs)
 - Terraform:
   - [Terraform labs](#terraform-labs)
   - [Terraform modules](#terraform-modules)
@@ -37,7 +37,7 @@
 </p>
 
 # Jenkins
-## Jenkins-CI/CD-Labs 
+## Jenkins-Labs 
 
 1. [Jenkins CI Pipeline - Build Docker image and Push to DockerHub](https://github.com/Joska99/jenkins-docker)
 <p align="center">
@@ -77,7 +77,9 @@
 ## Terraform-Modules 
 
 1. [Azure AKS with LogAnalytics and ACR module](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-aks-la)
+
 2. [Azure Linux VM module](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-linux-vm)
+
 3. [Azure WAN Hub module](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-wan-hub)
 
 # Docker

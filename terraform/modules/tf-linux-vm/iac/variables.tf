@@ -25,7 +25,7 @@ variable "sub_ip" {
 variable "vm_name" {
   type        = string
   description = "VM name in Azure"
-  default     = "admin-vm-server"
+  default     = "admin-vm"
 }
 variable "vm_size" {
   type        = string
