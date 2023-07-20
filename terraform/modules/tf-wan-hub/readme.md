@@ -3,16 +3,21 @@
 <img src="https://github.com/Joska99/joska/blob/main/terraform/modules/tf-wan-hub/diagram.drawio.svg">
 </p>
 
-<h1> Steps </h1>
+<h1> Steps: </h1>
 
-- Terraform init, plan apply with local backend from 'iac' directory
+- Terraform init, plan with local backend from 'iac' directory
 ```bash
 terraform init
 terraform plan --out tfplan
+```
+- Apply plan
+```bash
 terraform apply tfplan 
 ```
 
-- Delete
+<h1> To delete </h1>
+
+1. Run this command to destroy and add yes
 ```bash
-terraform destroy --auto-approve
-```
+terraform destroy
+``` 
