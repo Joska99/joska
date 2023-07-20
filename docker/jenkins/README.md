@@ -45,12 +45,7 @@ cat /var/jenkins_home/secrets/initialAdminPassword
  
 <h2>Save all data to Next time</h2>
 
-1. Create dir for Jenkins container data:
-```bash
-mkdir jenkins_home
-```
-
-2. Run to copy data to your local machine 
+1. Run to copy data to your local machine 
 ```bash
 docker cp jenkins:/var/jenkins_home .
 ```

@@ -1,7 +1,5 @@
 <h1> Joseph Kanzaveli Portfolio </h1>
 
-
-<!-- TODO: add agenda and scrolling lincks to all <h2> titles -->
 # Topics:
 - Kubernetes:
   - [Kubernetes labs](#kubernetes-labs)
@@ -13,6 +11,7 @@
 - Docker:
   - [Docker labs](#docker-labs)
 
+<!-- TODO: ADD DEVOPS SSUMMARY -->
 # Kubernetes
 ## Kubernetes-Labs
 
@@ -44,7 +43,7 @@
 <img src="https://github.com/Joska99/jenkins-docker/blob/main/diagram.drawio.svg">
 </p>
 
-<!-- TODO: end up kubernetes slaves  -->
+<!-- TODO: end up kubernetes slaves for jenkins  -->
 2. [Jenkins CI/CD pipeline - with slave in kubernetes](https://github.com/Joska99/jenkins-k8s)
 <p align="center">
 <img src="https://github.com/Joska99/jenkins-k8s/blob/main/diagram.drawio.svg">
@@ -96,7 +95,6 @@
 3. [Grafana Container with Data](https://github.com/Joska99/joska/tree/main/docker/grafana)
 <img src="https://github.com/Joska99/joska/blob/main/docker/grafana/diagram.drawio.svg">
 
-<!-- TODO: update -->
 4. [Nginx Container with multiple HTML pages](https://github.com/Joska99/joska/blob/main/docker/nginx)
 <img src="https://github.com/Joska99/joska/blob/main/docker/nginx/diagram.drawio.svg">
 
