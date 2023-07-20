@@ -73,7 +73,7 @@
 # Docker
 <h2> Docker labs </h2>
 
-1. [Jenkins Container guide](https://github.com/Joska99/joska/blob/main/docker/jenkins)
+1. [Jenkins Container with Docker guide](https://github.com/Joska99/joska/blob/main/docker/jenkins)
 <img src="https://github.com/Joska99/joska/blob/main/docker/jenkins/diagram.drawio.svg">
 
 <!-- TODO: update -->
