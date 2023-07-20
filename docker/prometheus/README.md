@@ -17,7 +17,7 @@ docker run -p 9000:9090  -d --name my-prom --restart=on-failure -t prom-containe
 
 <h2> To add target: </h2>
 
-<!-- TODO: ADD COFIG GUIDE, STEP BY STEP FOR JENKINS -->
+<!-- TODO: ADD CONFIG GUIDE, STEP BY STEP FOR JENKINS -->
 1. in "prometheus.yaml" file you can add IP of nodes that you want to collect metrics
 
 <h2> To delete: </h2>

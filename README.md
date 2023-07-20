@@ -90,7 +90,7 @@
 2. [Prometheus Container with config file](https://github.com/Joska99/joska/tree/main/docker/prometheus)
 <img src="https://github.com/Joska99/joska/blob/main/docker/prometheus/diagram.drawio.svg">
 
-3. [Grafana Container with Data](https://github.com/Joska99/joska/tree/main/docker/grafana)
+3. [Grafana Container](https://github.com/Joska99/joska/tree/main/docker/grafana)
 <img src="https://github.com/Joska99/joska/blob/main/docker/grafana/diagram.drawio.svg">
 
 4. [Nginx Container with multiple HTML pages](https://github.com/Joska99/joska/blob/main/docker/nginx)

@@ -1,11 +1,11 @@
-<h1>Prometheus Container with config file</h1>
+<h1>Grafana Container</h1>
 <p align="center">
 <img src="https://github.com/Joska99/joska/blob/main/docker/grafana/diagram.drawio.svg">
 </p>
 
 <h2> Steps: </h2>
 
-1.  Create dir for Grafana container data:
+1.  Create directory for Grafana container data:
 ```bash
 mkdir grafana-data
 ```
@@ -26,10 +26,8 @@ docker build -t grafana-container .
 docker run -p 3000:3000 -v grafana-data:/var/lib/grafana -d --name my-graf --restart=on-failure -t grafana-container
 ```
 4. Connect to localhost:3000
+
 5. login: admin  
-
-<h2> Change Admin  Passwd for Grafana: </h2>
-
 - Change password
 ```bash
 docker exec -it my-graf grafana-cli admin reset-admin-password 12345
