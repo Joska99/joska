@@ -3,14 +3,18 @@
 
 <!-- TODO: add agenda and scrolling lincks to all <h2> titles -->
 # Topics:
-- [Kubernetes labs](#kubernetes)
-- [Jenkins labs](#jenkins)
-- [Terraform labs](#terraform)
+- Kubernetes:
+  - [Kubernetes labs](#kubernetes-labs)
+- Jenkins:
+  - [Jenkins labs](#jenkins-ci/cd-labs)
+- Terraform:
+  - [Terraform labs](#terraform-labs)
   - [Terraform modules](#terraform-modules)
-- [Docker labs](#docker)
+- Docker:
+  - [Docker labs](#docker-labs)
 
 # Kubernetes
-<h2> Kubernetes labs </h2>
+## Kubernetes-Labs
 
 1. [Helm chart deploy static HTML page by Python Flask](https://github.com/Joska99/Targil1090)
 <p align="center">
@@ -33,7 +37,7 @@
 </p>
 
 # Jenkins
-<h2> Jenkins CI/CD labs </h2>
+## Jenkins-CI/CD-Labs 
 
 1. [Jenkins CI Pipeline - Build Docker image and Push to DockerHub](https://github.com/Joska99/jenkins-docker)
 <p align="center">
@@ -51,7 +55,7 @@
 <img src="https://github.com/Joska99/jenkins-terraform/blob/main/diagram.drawio.svg">
 
 # Terraform
-<h2> Terraform labs </h2>
+## Terraform-Labs 
 
 <!-- TODO: update -->
 1. [Terraform lab - Jenkins server in Azure configured by Ansible](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-jenkins-server)
@@ -69,16 +73,15 @@
 4. [Simple Terraform lab](https://github.com/Joska99/joska/blob/main/terraform/tf-ex1)
 <img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex1/diagram.drawio.svg">
 
-<!-- TODO: Add links to azure modules -->
+
 ## Terraform-Modules 
-<h3> Terraform modules </h3>
 
 1. [Azure AKS with LogAnalytics and ACR module](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-aks-la)
 2. [Azure Linux VM module](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-linux-vm)
 3. [Azure WAN Hub module](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-wan-hub)
 
 # Docker
-<h2> Docker labs </h2>
+## Docker-Labs
 
 1. [Jenkins Container with Docker guide](https://github.com/Joska99/joska/blob/main/docker/jenkins)
 <img src="https://github.com/Joska99/joska/blob/main/docker/jenkins/diagram.drawio.svg">

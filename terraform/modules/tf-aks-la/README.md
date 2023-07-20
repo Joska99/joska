@@ -3,7 +3,7 @@
 <img src="https://github.com/Joska99/joska/blob/main/terraform/modules/tf-aks-la/diagram.drawio.svg">
 </p>
 
-<h1> Steps </h1>
+<h1> Steps: </h1>
 
 1. Login to your Azure account from your IDE terminal:
 ```bash 
@@ -30,7 +30,7 @@ az aks get-credentials --resource-group aks-rg --name joska-cluster
 mv kubeconfig ~/.kube/config
 ```
 
-<h1> Create Storage Account in azure by CLI to store .tfstate</h1>
+<h1> Create Storage Account in azure by CLI to store .tfstate </h1>
 
 1. Create variables
 ```bash
@@ -41,7 +41,7 @@ CONTAINER_NAME=tf-state
 
 2. Create Storage Account
 ```bash
-az storage acount create --resource-group $RG_NAME --name $SA_NAME --sku Standard_LRS --encryption-services blob 
+az storage account create --resource-group $RG_NAME --name $SA_NAME --sku Standard_LRS --encryption-services blob 
 ```
 
 3. Create BLOB Container
@@ -59,14 +59,14 @@ ACCOUNT_KEY=$(az storage account keys list --resource-group aks-rg  --account-na
 $env:ARM_ACCESS_KEY=$ACCOUNT_KEY
 ```
 
-6. Uncoment backend in providers and add Storage account Credentials, Init changes and say yes 
+6. Uncomment backend in providers and add Storage account Credentials, Init changes and say yes 
 ```bash
 terraform init 
 ```
 
-<h1>To delete</h1>
+<h1> To delete </h1>
 
-1. Run this comand to destroy and add yes
+1. Run this command to destroy and add yes
 ```bash
 terraform destroy
 ``` 
