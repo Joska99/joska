@@ -26,7 +26,7 @@
 <img src="https://github.com/Joska99/joska/blob/main/kubernetes/Lab-1/diagram.drawio.svg">
 </p>
 
-4. [Helm deployment to Kubernetes, Prometheus+Grafana chart](https://github.com/Joska99/joska/blob/main/kubernetes/k8s-prom)
+4. [Helm deployment to Kubernetes, Prometheus+Grafana chart](https://github.com/Joska99/joska/blob/main/kubernetes/Lab-2)
 <p align="center">
 <img src="https://github.com/Joska99/joska/blob/main/kubernetes/Lab-2/diagram.drawio.svg">
 </p>

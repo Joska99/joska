@@ -5,12 +5,17 @@
 
 <h1>Build and Run Container</h1>
 
-1. Build Docker image:
+1. Create dir for Jenkins container data:
+```bash
+mkdir jenkins_home
+```
+
+2. Build Docker image:
 ```Bash
 docker build -t jenkins  .
 ```
 
-2. Run Docker container:
+3. Run Docker container:
 - -p - run on port
 - -d - detach mode
 - --name - chose container name
@@ -21,7 +26,7 @@ docker build -t jenkins  .
 docker run -p 8000:8080 -v /var/run/docker.sock:/var/run/docker.sock -d --name jenkins --restart=on-failure -t jenkins
 ```
 
-3. Connect to localhost:8000 
+4. Connect to localhost:8000 
 
 <h2>First time Jenkins log-in</h2>
 
@@ -49,9 +54,6 @@ mkdir jenkins_home
 ```bash
 docker cp jenkins:/var/jenkins_home .
 ```
-
-3. Uncomment the "COPY jenkins_home /var/jenkins_home" in Dockerfile and rerun container
-
 
 <h2>To delete:</h2>
 
