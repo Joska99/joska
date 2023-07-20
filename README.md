@@ -11,11 +11,10 @@
 - Docker:
   - [Docker labs](#docker-labs)
 
-<!-- TODO: ADD DEVOPS SSUMMARY -->
 # Kubernetes
 ## Kubernetes-Labs
 
-1. [Helm chart deploy static HTML page by Python Flask](https://github.com/Joska99/Targil1090)
+1. [Helm chart wit static HTML page by Python Flask](https://github.com/Joska99/Targil1090)
 <p align="center">
 <img src="https://github.com/Joska99/Targil1090/blob/master/helm-flask-html.drawio.svg">
 </p>
@@ -87,11 +86,10 @@
 1. [Jenkins Container with Docker guide](https://github.com/Joska99/joska/blob/main/docker/jenkins)
 <img src="https://github.com/Joska99/joska/blob/main/docker/jenkins/diagram.drawio.svg">
 
-<!-- TODO: update -->
+<!-- TODO: ADD COFIG GUIDE, STEP BY STEP FOR JENKINS  -->
 2. [Prometheus Container with config file](https://github.com/Joska99/joska/tree/main/docker/prometheus)
 <img src="https://github.com/Joska99/joska/blob/main/docker/prometheus/diagram.drawio.svg">
 
-<!-- TODO: update -->
 3. [Grafana Container with Data](https://github.com/Joska99/joska/tree/main/docker/grafana)
 <img src="https://github.com/Joska99/joska/blob/main/docker/grafana/diagram.drawio.svg">
 

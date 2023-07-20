@@ -1,7 +1,5 @@
-
 /docker/jenkins/jenkins_home/
 /docker/grafana/grafana-data/
 /docker/grafana/grafana.ini
 
-/python/args-os-sys/OS/OS1.py
 

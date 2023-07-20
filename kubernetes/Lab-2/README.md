@@ -1,6 +1,6 @@
 <p align="center">
 <h1>Helm deployment to Kubernetes, Prometheus+Grafana chart</h1>
-<img src="https://github.com/Joska99/joska/blob/main/kubernetes/k8s-prom/diagram.drawio.svg">
+<img src="https://github.com/Joska99/joska/blob/main/kubernetes/Lab-2/diagram.drawio.svg">
 
 <h1> Requirements </h1>
 
