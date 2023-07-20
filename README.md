@@ -3,10 +3,10 @@
 
 <!-- TODO: add agenda and scrolling lincks to all <h2> titles -->
 # Topics:
-- [Kubernetes labs](#Kubernetes)
-- [Jenkins labs](#Jenkins)
-- [Terraform labs](#Terrafoorm)
-- [Docker labs](#Docker)
+- [Kubernetes labs](#kubernetes)
+- [Jenkins labs](#jenkins)
+- [Terraform labs](#terrafoorm)
+- [Docker labs](#docker)
 
 # Kubernetes
 <h2> Kubernetes labs </h2>
