@@ -5,11 +5,10 @@
 # Topics:
 - [Kubernetes labs](#kubernetes)
 - [Jenkins labs](#jenkins)
-- [Terraform labs](#terrafoorm)
+- [Terraform labs](#terraform)
 - [Docker labs](#docker)
 
 # Kubernetes
-<h2> Kubernetes labs </h2>
 
 1. [Helm chart deploy static HTML page by Python Flask](https://github.com/Joska99/Targil1090)
 <p align="center">
@@ -32,7 +31,6 @@
 </p>
 
 # Jenkins
-<h2> Jenkins CI/CD labs </h2>
 
 1. [Jenkins CI Pipeline - Build Docker image and Push to DockerHub](https://github.com/Joska99/jenkins-docker)
 <p align="center">
@@ -50,7 +48,6 @@
 <img src="https://github.com/Joska99/jenkins-terraform/blob/main/diagram.drawio.svg">
 
 # Terraform
-<h2> Terraform labs </h2>
 
 <!-- TODO: update -->
 1. [Terraform module - Jenkins server in Azure configured by Ansible](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-jenkins-server)
@@ -71,7 +68,6 @@
 <!-- TODO: Add links to azure modules -->
 
 # Docker
-<h2> Docker labs </h2>
 
 1. [Jenkins Container guide](https://github.com/Joska99/joska/blob/main/docker/jenkins)
 <img src="https://github.com/Joska99/joska/blob/main/docker/jenkins/diagram.drawio.svg">
