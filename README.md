@@ -86,7 +86,7 @@
 1. [Jenkins Container with Docker guide](https://github.com/Joska99/joska/blob/main/docker/jenkins)
 <img src="https://github.com/Joska99/joska/blob/main/docker/jenkins/diagram.drawio.svg">
 
-<!-- TODO: ADD COFIG GUIDE, STEP BY STEP FOR JENKINS  -->
+<!-- TODO: ADD CONFIG GUIDE, STEP BY STEP FOR JENKINS  -->
 2. [Prometheus Container with config file](https://github.com/Joska99/joska/tree/main/docker/prometheus)
 <img src="https://github.com/Joska99/joska/blob/main/docker/prometheus/diagram.drawio.svg">
 
