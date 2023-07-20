@@ -1,5 +1,5 @@
-<p align="center">
 <h1>Terraform AKS, ACR and Log Analytics</h1>
+<p align="center">
 <img src="https://github.com/Joska99/joska/blob/main/terraform/modules/tf-aks-la/diagram.drawio.svg">
 </p>
 
@@ -9,11 +9,11 @@
 ```bash 
 az login 
 ```
-2. Move to "ias" folder and init Terraform:
+2. Move to "iac" folder and init Terraform:
 ```bash
 terraform init 
 ```
-3. Chek terraform module and output plan:
+3. Check terraform module and output plan:
 ```bash
 terraform plan --out tfplan
 ```
@@ -30,7 +30,7 @@ az aks get-credentials --resource-group aks-rg --name joska-cluster
 mv kubeconfig ~/.kube/config
 ```
 
-<h1> Create Storage Acount in azure by CLI to store .tfstate</h1>
+<h1> Create Storage Account in azure by CLI to store .tfstate</h1>
 
 1. Create variables
 ```bash
@@ -39,7 +39,7 @@ SA_NAME=sa4tstfstate
 CONTAINER_NAME=tf-state
 ```
 
-2. Create Storage Acount
+2. Create Storage Account
 ```bash
 az storage acount create --resource-group $RG_NAME --name $SA_NAME --sku Standard_LRS --encryption-services blob 
 ```

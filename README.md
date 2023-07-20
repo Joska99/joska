@@ -73,7 +73,7 @@
 ## Terraform-Modules 
 <h3> Terraform modules </h3>
 
-1. [Azure AKS+LogAnalytics module](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-aks-la)
+1. [Azure AKS with LogAnalytics and ACR module](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-aks-la)
 2. [Azure Linux VM module](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-linux-vm)
 3. [Azure WAN Hub module](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-wan-hub)
 
