@@ -6,6 +6,7 @@
 - [Kubernetes labs](#kubernetes)
 - [Jenkins labs](#jenkins)
 - [Terraform labs](#terraform)
+  - [Terraform modules](#terraform-modules)
 - [Docker labs](#docker)
 
 # Kubernetes
@@ -53,15 +54,15 @@
 <h2> Terraform labs </h2>
 
 <!-- TODO: update -->
-1. [Terraform module - Jenkins server in Azure configured by Ansible](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-jenkins-server)
+1. [Terraform lab - Jenkins server in Azure configured by Ansible](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-jenkins-server)
 <img src="https://github.com/Joska99/joska/blob/main/terraform/modules/tf-jenkins-server/diagram.drawio.svg">
 
 <!-- TODO: update -->
-2. [Terraform module - Minecraft Server ](https://github.com/Joska99/joska/blob/main/terraform/tf-ex3)
+2. [Terraform lab - Minecraft Server](https://github.com/Joska99/joska/blob/main/terraform/tf-ex3)
 <img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex3/diagram.drawio.svg">
 
 <!-- TODO: update -->
-3. [Hub and Spoke Terraform lab](https://github.com/Joska99/joska/blob/main/terraform/tf-ex2/hub-and-spoke-project)
+3. [Terraform lab - Hub and Spoke private network](https://github.com/Joska99/joska/blob/main/terraform/tf-ex2/hub-and-spoke-project)
 <img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex2/hub-and-spoke-project/diagram.drawio.svg"> 
 
 <!-- TODO: update -->
@@ -69,6 +70,12 @@
 <img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex1/diagram.drawio.svg">
 
 <!-- TODO: Add links to azure modules -->
+## Terraform-Modules 
+<h3> Terraform modules </h3>
+
+1. [Azure AKS+LogAnalytics module](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-aks-la)
+2. [Azure Linux VM module](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-linux-vm)
+3. [Azure WAN Hub module](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-wan-hub)
 
 # Docker
 <h2> Docker labs </h2>
