@@ -57,7 +57,7 @@
 # Docker
 ## Docker-Compose-Labs
 
-1. [Docker-Compose Wazuh guide](https://github.com/Joska99/docker/docker-compose/wazuh)
+1. [Docker-Compose Wazuh guide](https://github.com/Joska99/joska/blob/main/docker/docker-compose/wazuh)
 <p align="center">
 <img src="https://github.com/Joska99/joska/blob/main/docker/docker-compose/wazuh/diagram.drawio.svg">
 </p>
