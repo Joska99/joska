@@ -14,8 +14,8 @@
 
 # Kubernetes
 ## Kubernetes-Labs
-
-1. [Helm chart wit static HTML page by Python Flask](https://github.com/Joska99/Targil1090)
+<!-- TODO: ADD DATREE TEST IN CI -->
+1. [Helm chart wit Python Flask app and ArgoCD](https://github.com/Joska99/Targil1090)
 <p align="center">
 <img src="https://github.com/Joska99/Targil1090/blob/master/helm-flask-html.drawio.svg">
 </p>
@@ -57,7 +57,7 @@
 # Docker
 ## Docker-Compose-Labs
 
-1. [Docker-Compose Wazuh guide](https://github.com/Joska99/joska/blob/main/docker/docker-compose/wazuh)
+1. [Docker-Compose Wazuh SIEM guide](https://github.com/Joska99/joska/blob/main/docker/docker-compose/wazuh)
 <p align="center">
 <img src="https://github.com/Joska99/joska/blob/main/docker/docker-compose/wazuh/diagram.drawio.svg">
 </p>
@@ -91,7 +91,7 @@
 3. [Terraform lab - Hub and Spoke private network](https://github.com/Joska99/joska/blob/main/terraform/tf-ex2/hub-and-spoke-project)
 <img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex2/hub-and-spoke-project/diagram.drawio.svg"> 
 
-<!-- TODO: update -->
+<!-- TESTME: require test -->
 4. [Simple Terraform lab](https://github.com/Joska99/joska/blob/main/terraform/tf-ex1)
 <img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex1/diagram.drawio.svg">
 
