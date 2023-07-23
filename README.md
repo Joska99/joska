@@ -5,11 +5,12 @@
   - [Kubernetes labs](#kubernetes-labs)
 - Jenkins:
   - [Jenkins labs](#jenkins-labs)
+- Docker:
+  - [Docker Compose labs](#docker-compose-labs)
+  - [Docker labs](#docker-labs)
 - Terraform:
   - [Terraform labs](#terraform-labs)
   - [Terraform modules](#terraform-modules)
-- Docker:
-  - [Docker labs](#docker-labs)
 
 # Kubernetes
 ## Kubernetes-Labs
@@ -52,6 +53,29 @@
 3. [Jenkins CD Pipeline - Terraform deploy AKS to Azure](https://github.com/Joska99/jenkins-terraform)
 <img src="https://github.com/Joska99/jenkins-terraform/blob/main/diagram.drawio.svg">
 
+
+# Docker
+## Docker-Compose-Labs
+
+1. [Docker-Compose Wazuh guide](https://github.com/Joska99/docker/docker-compose/wazuh)
+<p align="center">
+<img src="https://github.com/Joska99/joska/blob/main/docker/docker-compose/wazuh/diagram.drawio.svg">
+</p>
+
+## Docker-Labs
+1. [Jenkins Container with Docker guide](https://github.com/Joska99/joska/blob/main/docker/jenkins)
+<img src="https://github.com/Joska99/joska/blob/main/docker/jenkins/diagram.drawio.svg">
+
+<!-- TODO: ADD CONFIG GUIDE, STEP BY STEP FOR JENKINS  -->
+2. [Prometheus Container with config file](https://github.com/Joska99/joska/tree/main/docker/prometheus)
+<img src="https://github.com/Joska99/joska/blob/main/docker/prometheus/diagram.drawio.svg">
+
+3. [Grafana Container](https://github.com/Joska99/joska/tree/main/docker/grafana)
+<img src="https://github.com/Joska99/joska/blob/main/docker/grafana/diagram.drawio.svg">
+
+4. [Nginx Container with multiple HTML pages](https://github.com/Joska99/joska/blob/main/docker/nginx)
+<img src="https://github.com/Joska99/joska/blob/main/docker/nginx/diagram.drawio.svg">
+
 # Terraform
 ## Terraform-Labs 
 
@@ -79,21 +103,3 @@
 2. [Azure Linux VM module](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-linux-vm)
 
 3. [Azure WAN Hub module](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-wan-hub)
-
-# Docker
-## Docker-Labs
-
-1. [Jenkins Container with Docker guide](https://github.com/Joska99/joska/blob/main/docker/jenkins)
-<img src="https://github.com/Joska99/joska/blob/main/docker/jenkins/diagram.drawio.svg">
-
-<!-- TODO: ADD CONFIG GUIDE, STEP BY STEP FOR JENKINS  -->
-2. [Prometheus Container with config file](https://github.com/Joska99/joska/tree/main/docker/prometheus)
-<img src="https://github.com/Joska99/joska/blob/main/docker/prometheus/diagram.drawio.svg">
-
-3. [Grafana Container](https://github.com/Joska99/joska/tree/main/docker/grafana)
-<img src="https://github.com/Joska99/joska/blob/main/docker/grafana/diagram.drawio.svg">
-
-4. [Nginx Container with multiple HTML pages](https://github.com/Joska99/joska/blob/main/docker/nginx)
-<img src="https://github.com/Joska99/joska/blob/main/docker/nginx/diagram.drawio.svg">
-
-
