@@ -6,7 +6,6 @@
 <h1> Requirements </h1>
 
 1. Kubernetes cluster
-- [My Terrafoorm module - AKS cluster](https://github.com/Joska99/joska/tree/main/terraform/tf-aks) 
 
 <h1>Steps:</h1>
 
@@ -26,11 +25,11 @@ git clone https://github.com/Joska99/joska/tree/main/kubernetes/Lab-1
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.1/deploy/static/provider/cloud/deploy.yaml
 ```
-3. Aplly manifest directory on cluster:
+3. Apply manifest directory on cluster:
 ```bash
 kubectl apply -f ./manifests
 ```
-4. open browser and check https://"ingress-external-ip"/bird, https://"ingress-external-ip"/cats and https://"ingress-external-ip"/dogs
+4. Open browser and check https://"ingress-external-ip"/bird, https://"ingress-external-ip"/cats and https://"ingress-external-ip"/dogs
 ```bash
 kubectl get svc ingress-nginx-controller -n ingress-nginx
 ```

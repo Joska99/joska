@@ -48,7 +48,7 @@ hostname -I
 <h2> Enable vulnerability-detector: </h2>
 
 1. Go to "Management" -> "Configurations" -> "Edit"
-2. Search for 'vulnerability-detector' in <enabled> change 'no' to 'yes'
+2. Search for 'vulnerability-detector' in "enabled" change 'no' to 'yes'
 ```
  <vulnerability-detector>
     <enabled>yes</enabled>
