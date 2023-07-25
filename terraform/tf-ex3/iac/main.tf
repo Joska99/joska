@@ -101,7 +101,7 @@ resource "azurerm_virtual_machine_data_disk_attachment" "attach-disk" {
 resource "null_resource" "local" {
   depends_on = [azurerm_linux_virtual_machine.vm, azurerm_virtual_machine_data_disk_attachment.attach-disk]
   provisioner "local-exec" {
-    command     = ". ./scripts/local.sh"
+    command     = ". ../scripts/local.sh"
     interpreter = ["/bin/bash", "-c"]
     environment = {
       SERVER_PIP = azurerm_public_ip.pip.ip_address

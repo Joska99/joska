@@ -85,9 +85,11 @@
 <img src="https://github.com/Joska99/joska/blob/main/terraform/modules/tf-jenkins-server/diagram.drawio.svg">
 </p>
 
-<!-- TODO: update -->
+<!-- TESTME: require test -->
 2. [Terraform lab - Minecraft Server](https://github.com/Joska99/joska/blob/main/terraform/tf-ex3)
+<p align="center">
 <img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex3/diagram.drawio.svg">
+<p>
 
 <!-- TESTME: require test -->
 3. [Simple Terraform lab](https://github.com/Joska99/joska/blob/main/terraform/tf-ex1)

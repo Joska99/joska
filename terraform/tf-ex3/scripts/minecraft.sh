@@ -11,7 +11,7 @@ sudo fdisk -l
 echo "##### Make format of managed disk #####"
 sudo mkfs.ext4 /dev/sdc -y
 
-echo "Mount disk to /datadrive"
+echo "###### Mount disk to /datadrive ######"
 sudo mkdir /datadrive
 sudo mount /dev/sdc /datadrive
 
