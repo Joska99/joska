@@ -126,7 +126,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
 resource "null_resource" "local" {
   depends_on = [azurerm_linux_virtual_machine.vm]
   provisioner "local-exec" {
-    command     = ". ./scripts/local.sh"
+    command     = ". ../scripts/local.sh"
     interpreter = ["/bin/bash", "-c"]
     environment = {
       AZURE_PUBLIC_IP = azurerm_public_ip.pip.ip_address

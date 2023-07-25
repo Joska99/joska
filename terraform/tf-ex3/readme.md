@@ -1,5 +1,5 @@
+<h1>Terraform Minecraft server in Azure configured by Ansible</h1>
 <p align="center">
-<h1>Terraform Jenkuns server in Azure configured by Ansible</h1>
 <img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex3/diagram.drawio.svg">
 </p>
 
@@ -11,7 +11,7 @@ terraform init
 terraform plan --out plan
 terraform apply plan 
 ```
-> output 'akey.pem' to local dir
+> output 'akey.pem' to local directory
 
 - Connect to VM
 ```bash
