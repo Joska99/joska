@@ -6,6 +6,15 @@ terraform {
       version = "3.45.0"
     }
   }
+  #########################################
+  # BACKEND FOR .TFSTATE AND LINUXKEY.PEM
+  #########################################
+  # backend "azurerm" {
+  #   resource_group_name  = var.rg_name
+  #   storage_account_name = var.sa_name
+  #   container_name       = var.con_name
+  #   key                  = "terraform.tfstate"
+  # }
 }
 
 ## config provider
@@ -25,9 +34,9 @@ resource "azurerm_postgresql_server" "serv" {
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
 
-  sku_name = "B_Gen5_2"
-  storage_mb                   = 5120
-  backup_retention_days        = 7
+  sku_name              = "B_Gen5_2"
+  storage_mb            = 5120
+  backup_retention_days = 7
 
 
   administrator_login          = var.login-passwd-for-vm[0]

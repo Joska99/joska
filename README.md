@@ -93,13 +93,14 @@
 
 <!-- TESTME: require test -->
 4. [Simple Terraform lab](https://github.com/Joska99/joska/blob/main/terraform/tf-ex1)
+<p align="center">
 <img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex1/diagram.drawio.svg">
-
+</p>
 
 ## Terraform-Modules 
-
+<!-- TESTME: require test -->
 1. [Azure AKS with LogAnalytics and ACR module](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-aks-la)
-
+<!-- TESTME: require test -->
 2. [Azure Linux VM module](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-linux-vm)
-
+<!-- TESTME: require test -->
 3. [Azure WAN Hub module](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-wan-hub)
