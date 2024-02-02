@@ -1,0 +1,5 @@
+FROM quay.io/prometheus/alertmanager
+
+COPY alertmanager.yml /etc/alertmanager/
+
+EXPOSE 9093

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    {{ title }}
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <p class="h1">Hi {{name}}, Welcome to Weather check!!!</p>
+  </div>
+  <div class="container-fluid">
+    <form action="/city" method="post">
+      <label>Enter City: </label>
+      <input type="text" id="city_input" name="city_input" placeholder="tel aviv"><br><br>
+      <input type="submit" value="Submit" class="btn btn-secondary">
+    </form>
+  </div>
+</body>
+
+</html>

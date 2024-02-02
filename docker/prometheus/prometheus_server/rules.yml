@@ -1,0 +1,10 @@
+# QUERY for alert manager to Notify
+groups:
+  - name: AllInstances
+    rules:
+    # Configure by Metric+Label
+      - alert: TelAviv
+        expr: city_test_total{city="Tel aviv"}
+        for: 1m
+        labels:
+          severity: "critical"

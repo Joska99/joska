@@ -1,1 +1,0 @@
-logedD.py creates file log.txt and write there func and time log by using decorators, and total use of functions by decorator from another module

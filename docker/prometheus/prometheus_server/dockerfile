@@ -1,0 +1,10 @@
+FROM prom/prometheus
+
+COPY rules.yml /etc/prometheus/
+
+COPY prom.yml /etc/prometheus/prometheus.yml
+
+# COPY prometheus-htpasswd /etc/prometheus/prometheus-htpasswd
+
+EXPOSE 9090
+

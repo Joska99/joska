@@ -1,4 +1,64 @@
-/docker/jenkins/jenkins_home/
-/docker/grafana/grafana-data/
-/docker/grafana/grafana.ini
-/.vscode/settings.json
+#! Black list
+*
+
+#! White list
+# repo stuf
+!*/
+# !*.json
+!.gitignore
+!.aliases
+!LICENSE
+
+# UML diagrams/mermaid
+!*.md
+!*.png
+!*.svg
+!*.jpg
+!*.wsd
+!*.drawio
+
+# shell
+!*.sh
+
+# python
+!*.py
+
+# Jenkins
+!jenkinsfile
+!Jenkinsfile
+
+# Docker
+!Dockerfile
+!dockerfile
+!.dockerignore
+
+# YAML
+!*.yaml
+!*.yml
+
+# HTML
+!*.html
+
+# Maven
+!*.xml
+
+# C
+!Makefile
+!*.c
+!*.h
+
+# for project
+!myapp.service
+!jenkins-agent.service
+!nginx.conf
+!requirements.txt
+
+# Ansible
+!inventory.ini
+
+# Terraform
+!*.tf
+!vars.tfvars
+
+# Elastic Sack
+!devops/docker/sw_in_containers/ELK/logstash/logstash.conf

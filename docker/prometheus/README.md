@@ -1,31 +1,64 @@
-<h1>Prometheus Container with config file</h1>
+# Prometheus Container with config file
+
 <p align="center">
 <img src="https://github.com/Joska99/joska/blob/main/docker/prometheus/diagram.drawio.svg">
 </p>
 
-<h2> Steps: </h2>
+## Steps:
 
-1. Build Docker image:
+### Prometheus-server
+
+1. Build Docker image ( in prometheus_server directory ):
+
 ```bash
 docker build -t prom-container .
 ```
+
 2. Run Docker container:
+
 ```bash
-docker run -p 9000:9090  -d --name my-prom --restart=on-failure -t prom-container
+docker run \
+    -p 9000:9090 \
+    --name my-prom \
+    --restart=on-failure \
+    -t prom-container \
+    -d
 ```
-3. Connect to localhost:9000 
 
-<h2> To add target: </h2>
+#### To add target:
 
-<!-- TODO: ADD CONFIG GUIDE, STEP BY STEP FOR JENKINS -->
-1. in "prometheus.yaml" file you can add IP of nodes that you want to target
+1. In "prometheus.yaml" file you can add IP of nodes that you want to target
 2. Rerun container
 
-<h2> To delete: </h2>
+### Alert-Manager
 
-```Bash
-docker kill my-prom
-docker rm my-prom
+1. Build Docker image ( in prometheus_alert_manager directory ):
+
+```bash
+docker build -t prom-alert-manager-container .
 ```
 
+2. Run Docker container:
 
+```bash
+docker run \
+    -p 9003:9093 \
+    --name my-alert \
+    --restart=on-failure \
+    -t prom-alert-manager-container \
+    -d
+```
+
+3. Connect to localhost:9003
+
+#### To add Alerts:
+
+1. In "rules.yaml" file you can provide QUERY to trigger Alert manager
+2. Rerun container
+
+## To delete:
+
+```Bash
+docker kill my-prom my-alert
+docker rm my-prom my-alert
+```

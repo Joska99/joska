@@ -1,0 +1,14 @@
+global:
+  resolve_timeout: 1m
+  slack_api_url: "URL"
+
+# Send to receivers
+route:
+  receiver: "slack-notifications"
+
+# Receivers
+receivers:
+  - name: "slack-notifications"
+    slack_configs:
+      - channel: "#prom"
+        send_resolved: true

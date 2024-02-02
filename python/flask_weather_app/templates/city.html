@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        {{ title }}
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <p class="h1">Weather for {{ city }}!!!</p>
+    </div>
+    <div>
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Temperature&deg</th>
+                    <th>Day Temp&deg</th>
+                    <th>Night Temp&deg</th>
+                    <th>Humidity</th>
+                    <th>City</th>
+                    <th>resolvedAddress</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in list %}
+                <tr>
+                    <td>{{ item.datetime }}</td>
+                    <td>{{ item.temp }}&deg</td>
+                    <td>{{ item.tempmax }}&deg</td>
+                    <td>{{ item.tempmin }}&deg</td>
+                    <td>{{ item.humidity }}</td>
+                    <td>{{ item.address }}</td>
+                    <td>{{ item.resolvedAddress }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="container-fluid">
+        <a href="{{ back }}" class="btn btn-secondary">Go home</a>
+    </div>
+</body>
+
+</html>
