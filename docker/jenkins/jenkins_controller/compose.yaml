@@ -9,5 +9,4 @@ services:
       - 80:8080
       - 50000:50000
     volumes:
-      - /var/jenkins_home:/var/jenkins_home
-# RECHECK volumes
+      - ./jenkins_home:/var/jenkins_home

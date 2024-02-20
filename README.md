@@ -10,14 +10,12 @@
   - [Docker Compose labs](#docker-compose-labs)
   - [Docker labs](#docker-labs)
 - Terraform:
-  - [Terraform labs](#terraform-labs)
+  - Terraform labs
+    - [Azure](#terraform-labs-azure)
   - [Terraform modules](#terraform-modules)
 
 # Kubernetes
-
 ## Kubernetes-Labs
-
-<!-- TODO: ADD DATREE TEST IN CI -->
 
 1. [Helm chart wit Python Flask app and ArgoCD](https://github.com/Joska99/Targil1090)
 <p align="center">
@@ -40,7 +38,6 @@
 </p>
 
 # Jenkins
-
 ## Jenkins-Labs
 
 1. [Jenkins CI Pipeline - Build Docker image and Push to DockerHub](https://github.com/Joska99/jenkins-docker)
@@ -74,9 +71,11 @@
 ## Docker-Labs
 
 <!-- [x] -->
-
+<!-- [ ] centralize -->
 1. [Jenkins Container](https://github.com/Joska99/joska/blob/main/docker/jenkins)
-   <img src="https://github.com/Joska99/joska/blob/main/docker/jenkins/diagram.drawio.svg">
+<p align="center">
+<img src="https://github.com/Joska99/joska/blob/main/docker/jenkins/diagram.drawio.svg">
+</p>
 
 <!-- [x]  -->
 
@@ -97,54 +96,55 @@
 
 ## Terraform-Labs
 
-### Terraform-Labs AWS
-
-### Terraform-Labs Azure
-
-<!-- [ ] require test -->
-
-1. [Terraform lab - Jenkins server in Azure configured by Ansible](https://github.com/Joska99/joska/blob/main/terraform/modules/tf-jenkins-server)
+### Terraform-Labs-Azure
+<!-- [x] -->
+<!-- [ ] Fix IMG in README -->
+<!-- [ ] require update -->
+1. [Terraform lab - Jenkins server in Azure configured by Ansible](https://github.com/Joska99/joska/blob/main/terraform/azure_labs/tf-jenkins-server)
 <p align="center">
-<img src="https://github.com/Joska99/joska/blob/main/terraform/modules/tf-jenkins-server/diagram.drawio.svg">
+<img src="https://github.com/Joska99/joska/blob/main/terraform/azure_labs/tf-jenkins-server/diagram.drawio.svg">
 </p>
 
+<!-- [x] -->
+<!-- [ ] Fix IMG in README -->
 <!-- [ ] require test -->
-
-2. [Terraform lab - Minecraft Server](https://github.com/Joska99/joska/blob/main/terraform/tf-ex3)
+2. [Terraform lab - Minecraft Server](https://github.com/Joska99/joska/blob/main/terraform/azure_labs/tf-ex3)
 <p align="center">
-<img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex3/diagram.drawio.svg">
+<img src="https://github.com/Joska99/joska/blob/main/terraform/azure_labs/tf-ex3/diagram.drawio.svg">
 <p>
 
-<!-- [ ] require test -->
-
-3. [Simple Terraform lab](https://github.com/Joska99/joska/blob/main/terraform/tf-ex1)
+<!-- [x] -->
+<!-- [ ] Fix IMG in README -->
+3. [Simple Terraform lab](https://github.com/Joska99/joska/blob/main/terraform/azure_labs/tf-ex1)
 <p align="center">
-<img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex1/diagram.drawio.svg">
+<img src="https://github.com/Joska99/joska/blob/main/terraform/azure_labs/tf-ex1/diagram.drawio.svg">
 </p>
 
-<!-- TODO: update -->
-
-4. [Terraform lab - Hub and Spoke private network](https://github.com/Joska99/joska/blob/main/terraform/tf-ex2/hub-and-spoke-project)
-   <img src="https://github.com/Joska99/joska/blob/main/terraform/tf-ex2/hub-and-spoke-project/diagram.drawio.svg">
+<!-- [x] -->
+<!-- [ ] Fix IMG in README -->
+<!-- [ ] update -->
+4. [Terraform lab - Hub and Spoke private network](https://github.com/Joska99/joska/blob/main/terraform/azure_labs/tf-ex2/hub-and-spoke-project)
+<p align="center">
+<img src="https://github.com/Joska99/joska/blob/main/terraform/azure_labs/tf-ex2/hub-and-spoke-project/diagram.drawio.svg">
+</p>
 
 ## Terraform-Modules
 
-### Terraform-Modules AWS
-
+### Terraform-Modules-AWS
 1. [AWS EC2](https://github.com/Joska99/joska/blob/main/terraform/modules/aws/aws_ec2)
 2. [AWS Security Group](https://github.com/Joska99/joska/blob/main/terraform/modules/aws/aws_security_group)
+
+<!-- [ ] Fix IMG in README -->
 3. [AWS VPC with Private and Public Subnets](https://github.com/Joska99/joska/blob/main/terraform/modules/aws/vpc_privat_and_public_subnet)
 
-### Terraform-Modules Azure
-
+### Terraform-Modules-Azure
 <!-- [x] -->
-
+<!-- [ ] Fix IMG in README -->
 1. [Azure AKS with LogAnalytics and ACR module](https://github.com/Joska99/joska/blob/main/terraform/modules/azure/tf-aks-la)
 
 <!-- [x] -->
-
+<!-- [ ] Fix IMG in README -->
 2. [Azure Linux VM](https://github.com/Joska99/joska/blob/main/terraform/modules/azure/tf-linux-vm)
 
 <!-- [x] -->
-
 3. [Azure WAN Hub](https://github.com/Joska99/joska/blob/main/terraform/modules/azure/tf-wan-hub)

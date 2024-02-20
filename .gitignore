@@ -7,7 +7,7 @@
 # !*.json
 !.gitignore
 !.aliases
-!LICENSE
+
 
 # UML diagrams/mermaid
 !*.md
@@ -48,7 +48,6 @@
 !*.h
 
 # for project
-!myapp.service
 !jenkins-agent.service
 !nginx.conf
 !requirements.txt
@@ -61,4 +60,4 @@
 !vars.tfvars
 
 # Elastic Sack
-!devops/docker/sw_in_containers/ELK/logstash/logstash.conf
+!logstash.conf

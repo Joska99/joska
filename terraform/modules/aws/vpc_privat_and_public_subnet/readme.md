@@ -1,1 +1,1 @@
-![DIAGRAM_PNG](https://github.com/Joska99/home_assignment/blob/main/diagram.drawio.png)
+![DIAGRAM_PNG](https://github.com/Joska99/joska/tree/main/terraform/modules/aws/vpc_privat_and_public_subnet/diagram.drawio.png)
