@@ -69,23 +69,21 @@
 </p>
 
 ## Docker-Labs
-
-<!-- [x] -->
-<!-- [ ] centralize -->
 1. [Jenkins Container](https://github.com/Joska99/joska/blob/main/docker/jenkins)
 <p align="center">
 <img src="https://github.com/Joska99/joska/blob/main/docker/jenkins/diagram.drawio.svg">
 </p>
 
-<!-- [x]  -->
 
 2. [Prometheus with config file and Alert Manager Containers](https://github.com/Joska99/joska/tree/main/docker/prometheus)
-   <img src="https://github.com/Joska99/joska/blob/main/docker/prometheus/diagram.drawio.svg">
-
-<!-- [ ] -->
+<p align="center">
+<img src="https://github.com/Joska99/joska/blob/main/docker/prometheus/diagram.drawio.svg">
+</p>
 
 3. [Grafana Container](https://github.com/Joska99/joska/tree/main/docker/grafana)
-   <img src="https://github.com/Joska99/joska/blob/main/docker/grafana/diagram.drawio.svg">
+<p align="center">
+<img src="https://github.com/Joska99/joska/blob/main/docker/grafana/diagram.drawio.svg">
+</p>
 
 <!-- !TEMPLATE -->
 
@@ -120,8 +118,6 @@
 <img src="https://github.com/Joska99/joska/blob/main/terraform/azure_labs/tf-ex1/diagram.drawio.svg">
 </p>
 
-<!-- [x] -->
-<!-- [x] Fix IMG in README -->
 <!-- [ ] update -->
 4. [Terraform lab - Hub and Spoke private network](https://github.com/Joska99/joska/blob/main/terraform/azure_labs/tf-ex2/hub-and-spoke-project)
 <p align="center">
