@@ -121,7 +121,7 @@
 </p>
 
 <!-- [x] -->
-<!-- [ ] Fix IMG in README -->
+<!-- [x] Fix IMG in README -->
 <!-- [ ] update -->
 4. [Terraform lab - Hub and Spoke private network](https://github.com/Joska99/joska/blob/main/terraform/azure_labs/tf-ex2/hub-and-spoke-project)
 <p align="center">
@@ -133,19 +133,9 @@
 ### Terraform-Modules-AWS
 1. [AWS EC2](https://github.com/Joska99/joska/blob/main/terraform/modules/aws/aws_ec2)
 2. [AWS Security Group](https://github.com/Joska99/joska/blob/main/terraform/modules/aws/aws_security_group)
-
-<!-- [ ] Fix IMG in README -->
 3. [AWS VPC with Private and Public Subnets](https://github.com/Joska99/joska/blob/main/terraform/modules/aws/vpc_privat_and_public_subnet)
 
 ### Terraform-Modules-Azure
-<!-- [x] -->
-<!-- [x] Fix IMG in README -->
 1. [Azure AKS with LogAnalytics and ACR module](https://github.com/Joska99/joska/blob/main/terraform/modules/azure/tf-aks-la)
-
-<!-- [x] -->
-<!-- [x] Fix IMG in README -->
 2. [Azure Linux VM](https://github.com/Joska99/joska/blob/main/terraform/modules/azure/tf-linux-vm)
-
-<!-- [x] -->
-<!-- [x] Fix IMG in README -->
 3. [Azure WAN Hub](https://github.com/Joska99/joska/blob/main/terraform/modules/azure/tf-wan-hub)
