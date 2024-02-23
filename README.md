@@ -139,12 +139,13 @@
 
 ### Terraform-Modules-Azure
 <!-- [x] -->
-<!-- [ ] Fix IMG in README -->
+<!-- [x] Fix IMG in README -->
 1. [Azure AKS with LogAnalytics and ACR module](https://github.com/Joska99/joska/blob/main/terraform/modules/azure/tf-aks-la)
 
 <!-- [x] -->
-<!-- [ ] Fix IMG in README -->
+<!-- [x] Fix IMG in README -->
 2. [Azure Linux VM](https://github.com/Joska99/joska/blob/main/terraform/modules/azure/tf-linux-vm)
 
 <!-- [x] -->
+<!-- [x] Fix IMG in README -->
 3. [Azure WAN Hub](https://github.com/Joska99/joska/blob/main/terraform/modules/azure/tf-wan-hub)

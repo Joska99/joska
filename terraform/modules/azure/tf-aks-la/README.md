@@ -1,6 +1,6 @@
 <h1>Terraform AKS, ACR and Log Analytics</h1>
 <p align="center">
-<img src="https://github.com/Joska99/joska/blob/main/terraform/modules/tf-aks-la/diagram.drawio.svg">
+<img src="https://github.com/Joska99/joska/blob/main/terraform/modules/azure/tf-aks-la/diagram.drawio.svg">
 </p>
 
 <h1> Steps: </h1>
