@@ -70,6 +70,11 @@
 <img src="https://github.com/Joska99/joska/blob/main/docker/wazuh/diagram.drawio.svg">
 </p>
 
+2. [Docker-Compose MongoDB guide](https://github.com/Joska99/joska/blob/main/docker/wazuh)
+<p align="center">
+<img src="https://github.com/Joska99/joska/blob/main/docker/mongodb/diagram.drawio.svg">
+</p>
+
 ## Docker-Labs
 
 1. [Jenkins Container](https://github.com/Joska99/joska/blob/main/docker/jenkins)

@@ -19,7 +19,6 @@ docker build -t jenkins  .
 - --name - chose container name
 - --restart=on-failure - automatically restart container
 - -t - image tag to run
-- -v - mount docker.socket to container
 
 ```Bash
 docker run -p 80:8080 \
