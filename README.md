@@ -70,7 +70,7 @@
 <img src="https://github.com/Joska99/joska/blob/main/docker/wazuh/diagram.drawio.svg">
 </p>
 
-2. [Docker-Compose MongoDB guide](https://github.com/Joska99/joska/blob/main/docker/wazuh)
+2. [Docker-Compose MongoDB guide](https://github.com/Joska99/joska/blob/main/docker/mongodb)
 <p align="center">
 <img src="https://github.com/Joska99/joska/blob/main/docker/mongodb/diagram.drawio.svg">
 </p>
